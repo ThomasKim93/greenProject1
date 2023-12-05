@@ -1,0 +1,226 @@
+.about_section {
+    .about_start {
+        background-color: rgba(34, 83, 120, 0.25);
+        padding: 40px 60px 40px 60px;
+        margin: 0 auto;
+
+        h3 {
+            font-size: 32px;
+            color: #202D3F;
+            text-align: center;
+        }
+
+        .about1 {
+            //width: 80%;
+            margin: 0 auto;
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+
+            img {
+                width: 630px;
+                height: 407px;
+                border-radius: 10px;
+            }
+
+            .text {
+                width: 45%;
+                height: 407px;
+
+                p {}
+
+
+                ul {
+                    display: flex;
+                    border-top: 1px solid rgba(28, 154, 234, 0.5);
+                    border-bottom: 1px solid rgba(28, 154, 234, 0.5);
+
+                    li {
+                        color: #202D3F;
+                        font-size: 36px;
+                        font-weight: 600;
+                        padding: 10px;
+                        line-height: 43.57px;
+
+                        >p {
+                            font-size: 17px;
+                            font-weight: 400;
+                            line-height: 20.57px;
+                            color: #202D3F;
+                        }
+                    }
+                }
+
+                div {
+                    width: 40%;
+                    margin: 0 auto;
+
+                    button {
+                        align-items: center;
+                        color: white;
+                        border: 0;
+                        border-radius: 5px;
+                        width: 184px;
+                        height: 48px;
+                        background-color: #1C9AEA;
+                        padding: 14px 10px 14px 10px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .about_second {
+        margin-top: 50px;
+        padding: 40px 60px 40px 60px;
+        background-color: rgba(28, 73, 106, 1);
+
+        h3 {
+            font-size: 32px;
+            text-align: center;
+            color: white;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+
+            >div {
+                gap: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                width: 285px;
+                height: 260px;
+
+                &:nth-child(1) {
+                    background-color: rgba(127, 149, 177, 1);
+                    ;
+                    border: 1px solid rgba(127, 149, 177, 1);
+                }
+
+                &:nth-child(2) {
+                    background-color: rgba(142, 156, 80, 1);
+                    border: 1px solid rgba(142, 156, 80, 1);
+                }
+
+                &:nth-child(3) {
+                    background-color: rgba(92, 161, 153, 1);
+                    border: 1px solid rgba(92, 161, 153, 1);
+                }
+
+                &:nth-child(4) {
+                    background-color: rgba(198, 106, 128, 1);
+                    border: 1px solid rgba(198, 106, 128, 1);
+                }
+
+                p {
+                    color: white;
+                    font-size: 17px;
+                    margin: 0;
+                    text-align: center;
+                }
+
+                span {
+                    color: white;
+                    font-size: 21px;
+                }
+            }
+
+
+
+        }
+    }
+
+    .about_third {
+        background-color: white;
+        
+        h3 {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 17px;
+            text-align: center;
+        }
+
+        .about_third_introduce{ 
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+
+            div{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                padding: 16px;
+                .social {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                }
+                .show {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    img {}
+                    >p{
+                        font-size: 21px;
+                        line-height: 25.41px;
+                    }
+    
+                    span {
+                        font-size: 21px;
+                        line-height: 25.41px;
+                    }
+                }
+            }
+            }
+        }
+
+    .about_fourth{
+        background-color: rgba(28, 73, 106, 1);
+        >div{
+            display: flex;
+            padding: 40px 60px 40px 60px;
+            justify-content: space-around;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 480px;
+
+                h3{
+                    color: white;
+                    font-size: 32px;
+                    line-height: 48px;    
+                }
+                p{
+                    color: white;
+                    font-size: 17px;
+                    line-height: 20.57px;
+                }
+            }
+            ul{
+                width: 682px;
+                
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    color: white;
+                    font-size: 17px;
+                    line-height: 20.57px;
+                    margin-top: 10px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid rgba(28, 154, 234, 0.25);
+                }
+                }
+            }
+        }
+    }
+    

@@ -1,0 +1,32 @@
+.customer_section{
+    padding: 40px 60px;
+    article{
+        h3{
+            text-align: center;
+            font-size: 32px;
+        }
+        p{font-size: 17px;}
+    }
+    ul{
+        margin: 0 auto;
+        li{
+            width: 20%;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px 16px;
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        span{
+            display: block;
+        }
+        .star{
+            text-align: end;
+        }
+        
+        }
+    }
+}
