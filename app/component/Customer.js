@@ -19,7 +19,7 @@ function Customer() {
         <span>Sarah Jones</span>
         <p>This platform is a lifesaver! It has taken the stress out of managing our software subscriptions.</p>
         <div className={style.star}>별점</div>
-      </li>
+      </li> 
     </ul>
     </article>
     </section>
