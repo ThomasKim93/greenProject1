@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <>
     {/* <Aboutus/> */}
-    {/* <Customer/> */}
+    <Customer/>
     {/* <Blogs/>
     <Solution/> */}
-    <Error/>
+    {/* <Error/> */}
     </>
   )
 }
