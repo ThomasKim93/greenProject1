@@ -1,8 +1,103 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import style from '../pages/blogs/blogs.module.scss';
 
 
 function Blogs() {
+    const [search,setSearch] = useState('');
+
+    const filtersBologs = (blogs)=>{
+      const lower = search.toLowerCase();
+      return(
+        blogs.title.toLowerCase().includes(lower) ||
+        blogs.content.toLowerCase().includes(lower)
+        );
+    };
+
+    const blogs = [
+      {
+        id: 1,
+        image: '../../../blogs/blogs_featured.png',
+        readTime: '10 min read',
+        date: '12 Nov 23',
+        title: 'Critical tools every company needs.',
+        content: 'Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...',
+        writer: {
+          name: 'Travis Scott',
+          profileImage: '../../../blogs/Mask.png',
+        },
+        starImage: '../../../blogs/star.png',
+      },
+      {
+        id: 1,
+        image: '../../../blogs/blogs_featured.png',
+        readTime: '10 min read',
+        date: '12 Nov 23',
+        title: 'Critical tools every company needs.',
+        content: 'Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...',
+        writer: {
+          name: 'Travis Scott',
+          profileImage: '../../../blogs/Mask.png',
+        },
+        starImage: '../../../blogs/star.png',
+      },
+      {
+        id: 1,
+        image: '../../../blogs/blogs_featured.png',
+        readTime: '10 min read',
+        date: '12 Nov 23',
+        title: 'Critical tools every company needs.',
+        content: 'Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...',
+        writer: {
+          name: 'Travis Scott',
+          profileImage: '../../../blogs/Mask.png',
+        },
+        starImage: '../../../blogs/star.png',
+      },
+      {
+        id: 1,
+        image: '../../../blogs/blogs_featured.png',
+        readTime: '10 min read',
+        date: '12 Nov 23',
+        title: 'Critical tools every company needs.',
+        content: 'Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...',
+        writer: {
+          name: 'Travis Scott',
+          profileImage: '../../../blogs/Mask.png',
+        },
+        starImage: '../../../blogs/star.png',
+      },
+      {
+        id: 1,
+        image: '../../../blogs/blogs_featured2.png',
+        readTime: '10 min read',
+        date: '12 Nov 23',
+        title: 'Critical tools every company needs.',
+        content: `hey let's take a pickture`,
+        writer: {
+          name: 'Travis Scott',
+          profileImage: '../../../blogs/Mask.png',
+        },
+        starImage: '../../../blogs/star.png',
+      },
+      {
+        id: 1,
+        image: '../../../blogs/blogs_featured2.png',
+        readTime: '10 min read',
+        date: '12 Nov 23',
+        title: 'Critical tools every company needs.',
+        content: 'Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...',
+        writer: {
+          name: 'Travis Scott',
+          profileImage: '../../../blogs/Mask.png',
+        },
+        starImage: '../../../blogs/star.png',
+      },
+    ]
+
+    const filteredBlogs = blogs.filter(filtersBologs);
+
+
   return (
     <>
       <section className={style.blogs_section}>
@@ -11,7 +106,12 @@ function Blogs() {
           <p>A center for all our resources and insights</p>
           <label>
             <img src='../../../blogs/view.png' />
-            <input placeholder='Search our blogs by topic or key word...' />
+            <input 
+            name='keyword'
+            placeholder='Search our blogs by topic or key word...' 
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            />
           </label>
         </article>
 
@@ -35,7 +135,7 @@ function Blogs() {
                   <figure>
                     <img src='../../../blogs/Mask.png' /> <span>Travis Scott</span>
                   </figure>
-                  <p>별점</p>
+                  <p><img src='../../../blogs/star.png'/></p>
                 </div>
               </div>
             </div>
@@ -50,74 +150,22 @@ function Blogs() {
           </nav>
           <div className={style.show_nav}>
           <ul className={style.nav_all}>
-            <li>
-              <img src='../../../blogs/blogs_featured.png' />
-              <p className={style.state}>10 min read<span>12 Nov 23</span></p>
-              <h3 className={style.title}>Critical tools every company needs.</h3>
-              <p>Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...</p>
-              <div>
-                <img src='../../../blogs/Mask.png'/>
-                <span>travis Scott</span>
-                <p>별점</p>
+          { 
+          filteredBlogs.map((blogs) => (
+          <li key = {blogs.id}>
+              <img src={blogs.image} />
+              <p className={style.state}>{blogs.readTime}<span>{blogs.date}</span></p>
+              <h3 className={style.title}>{blogs.title}</h3>
+              <p>{blogs.content}</p>
+              <div className={style.writer}>
+                  <figure>
+                    <img src={blogs.writer.profileImage} /> <span>{blogs.writer.name}</span>
+                  </figure>
+                  <p><img src={blogs.starImage}/></p>
               </div>
             </li>
-            <li>
-              <img src='../../../blogs/blogs_featured.png' />
-              <p className={style.state}>10 min read<span>12 Nov 23</span></p>
-              <h3 className={style.title}>Critical tools every company needs.</h3>
-              <p>Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...</p>
-              <div>
-                <img src='../../../blogs/Mask.png' />
-                <span>travis Scott</span>
-                <p>별점</p>
-              </div>
-            </li>
-            <li>
-              <img src='../../../blogs/blogs_featured.png' />
-              <p className={style.state}>10 min read<span>12 Nov 23</span></p>
-              <h3 className={style.title}>Critical tools every company needs.</h3>
-              <p>Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...</p>
-              <div>
-                <img src='../../../blogs/Mask.png' />
-                <span>travis Scott</span>
-                <p>별점</p>
-              </div>
-            </li>
-            <li>
-              <img src='../../../blogs/blogs_featured.png' />
-              <p className={style.state}>10 min read<span>12 Nov 23</span></p>
-              <h3 className={style.title}>Critical tools every company needs.</h3>
-              <p>Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...</p>
-              <div>
-                <img src='../../../blogs/Mask.png' />
-                <span>travis Scott</span>
-                <p>별점</p>
-              </div>
-            </li>
-            <li>
-              <img src='../../../blogs/blogs_featured.png' />
-              <p className={style.state}>10 min read<span>12 Nov 23</span></p>
-              <h3 className={style.title}>Critical tools every company needs.</h3>
-              <p>Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...</p>
-              <div>
-                <img src='../../../blogs/Mask.png' />
-                <span>travis Scott</span>
-                <p>별점</p>
-              </div>
-            </li>
-            <li>
-              <img src='../../../blogs/blogs_featured.png' />
-              <p className={style.state}>10 min read<span>12 Nov 23</span></p>
-              <h3 className={style.title}>Critical tools every company needs.</h3>
-              <p>Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...</p>
-              <div>
-                <img src='../../../blogs/Mask.png' />
-                <span>travis Scott</span>
-                <p>별점</p>
-              </div>
-            </li>
-
-          
+          )  
+            )}
           </ul>
           </div>
         </article>
