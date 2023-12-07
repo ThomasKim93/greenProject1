@@ -10,11 +10,32 @@
             color: #202D3F;
             margin: 0;
         }
-
         p {
             width: 45%;
             font-size: 17px;
             color: #B9BDC3;
+        }
+    }
+    .ani{
+        overflow: hidden;
+        .aniimg{
+            display: flex;
+            gap: 40px;
+            white-space: nowrap; /* 강제로 한줄 처리 명령어 */
+            animation-name: aniimg;
+            animation-duration: 5s;
+            animation-iteration-count: infinite; /* infinite=무한반복 */
+            animation-timing-function: ease-in-out ;
+            img{
+                width:10%;
+            }
+            @keyframes aniimg {
+                0%{transform: translateX(0%);}
+                100%{transform: translateX(-40%);}
+            }
+            &:hover{
+                animation-play-state: paused;
+            }
         }
     }
 

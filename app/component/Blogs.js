@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import style from '../pages/blogs/blogs.module.scss';
+import blogData from './blog.json';
 
 
 function Blogs() {
@@ -14,88 +15,8 @@ function Blogs() {
         );
     };
 
-    const blogs = [
-      {
-        id: 1,
-        image: '../../../blogs/blogs_featured.png',
-        readTime: '10 min read',
-        date: '12 Nov 23',
-        title: 'Critical tools every company needs.',
-        content: 'Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...',
-        writer: {
-          name: 'Travis Scott',
-          profileImage: '../../../blogs/Mask.png',
-        },
-        starImage: '../../../blogs/star.png',
-      },
-      {
-        id: 1,
-        image: '../../../blogs/blogs_featured.png',
-        readTime: '10 min read',
-        date: '12 Nov 23',
-        title: 'Critical tools every company needs.',
-        content: 'Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...',
-        writer: {
-          name: 'Travis Scott',
-          profileImage: '../../../blogs/Mask.png',
-        },
-        starImage: '../../../blogs/star.png',
-      },
-      {
-        id: 1,
-        image: '../../../blogs/blogs_featured.png',
-        readTime: '10 min read',
-        date: '12 Nov 23',
-        title: 'Critical tools every company needs.',
-        content: 'Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...',
-        writer: {
-          name: 'Travis Scott',
-          profileImage: '../../../blogs/Mask.png',
-        },
-        starImage: '../../../blogs/star.png',
-      },
-      {
-        id: 1,
-        image: '../../../blogs/blogs_featured.png',
-        readTime: '10 min read',
-        date: '12 Nov 23',
-        title: 'Critical tools every company needs.',
-        content: 'Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...',
-        writer: {
-          name: 'Travis Scott',
-          profileImage: '../../../blogs/Mask.png',
-        },
-        starImage: '../../../blogs/star.png',
-      },
-      {
-        id: 1,
-        image: '../../../blogs/blogs_featured2.png',
-        readTime: '10 min read',
-        date: '12 Nov 23',
-        title: 'Critical tools every company needs.',
-        content: `hey let's take a pickture`,
-        writer: {
-          name: 'Travis Scott',
-          profileImage: '../../../blogs/Mask.png',
-        },
-        starImage: '../../../blogs/star.png',
-      },
-      {
-        id: 1,
-        image: '../../../blogs/blogs_featured2.png',
-        readTime: '10 min read',
-        date: '12 Nov 23',
-        title: 'Critical tools every company needs.',
-        content: 'Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...',
-        writer: {
-          name: 'Travis Scott',
-          profileImage: '../../../blogs/Mask.png',
-        },
-        starImage: '../../../blogs/star.png',
-      },
-    ]
 
-    const filteredBlogs = blogs.filter(filtersBologs);
+    const filteredBlogs = blogData.filter(filtersBologs);
 
 
   return (

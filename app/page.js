@@ -4,15 +4,17 @@ import Blogs from './component/Blogs'
 import Customer from './component/Customer'
 import Solution from './component/Solution'
 import Error from './component/Error'
+import Detail from './component/Detail'
 
 export default function Home() {
   return (
     <>
     {/* <Aboutus/> */}
-    {/* <Customer/> */}
-    <Blogs/>
+    <Customer/>
+    {/* <Blogs/> */}
     {/* <Solution/> */}
     {/* <Error/> */}
+    <Detail/>
     </>
   )
 }
