@@ -1,11 +1,13 @@
 "use client"
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 import style from '../pages/blogs/blogs.module.scss';
-import blogData from './blog.json';
+import blogData from '../pages/blogs/blog.json';
 
 
 function Blogs() {
     const [search,setSearch] = useState('');
+    const [id,setId] = useState(0);
 
     const filtersBologs = (blogs)=>{
       const lower = search.toLowerCase();
@@ -14,11 +16,13 @@ function Blogs() {
         blogs.content.toLowerCase().includes(lower)
         );
     };
-
-
     const filteredBlogs = blogData.filter(filtersBologs);
-
-
+   
+    const router = useRouter();
+    const movedetail = (clickedId)=>{
+      setId(clickedId);
+      router.push(`/blogs/${clickedId}`)
+    }
   return (
     <>
       <section className={style.blogs_section}>
@@ -73,7 +77,7 @@ function Blogs() {
           <ul className={style.nav_all}>
           { 
           filteredBlogs.map((blogs) => (
-          <li key = {blogs.id}>
+          <li key = {blogs.id}  onClick={() =>movedetail(blogs.id)} >
               <img src={blogs.image} />
               <p className={style.state}>{blogs.readTime}<span>{blogs.date}</span></p>
               <h3 className={style.title}>{blogs.title}</h3>

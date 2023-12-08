@@ -10,7 +10,6 @@ function Customer() {
           <h3>Customers</h3>
           <p>We are proud to serve a diverse range of businesses across various industries. Our clients come in all sizes, from startups to enterprises, and they all share a common need: to leverage the power of technology to achieve their goals.  </p>
         </article>
-          
           <article className={style.ani}>
             <figure className={style.aniimg}>
               <img src='../../../customers/swiper1.png'></img>
@@ -22,10 +21,8 @@ function Customer() {
               <img src='../../../customers/swiper7.png'></img>
               <img src='../../../customers/swiper8.png'></img>
               <img src='../../../customers/swiper9.png'></img>
-              <img src='../../../customers/swiper10.png'></img>
             </figure>
           </article>
-
         <article className={style.customer2}>
           <ul className={style.numbox}>
             <li className={style.num1}>

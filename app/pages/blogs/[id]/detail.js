@@ -1,13 +1,9 @@
 "use client"
-
-import React from 'react'
-import { useRouter } from 'next/router';
+import { useParams } from 'next/navigation'
+import blogData from '../../../blogs/blog.json';
 import style from '../pages/detail/detail.module.scss'
-import blogData from '../pages/blogs/blog.json';
 
-
-function Detail() {
-    const router = useRouter();
+function Detail({blog}) {
     const { clickedId } = router.query;
     const blog = blogData.find(blog => blog.id === clickedId);
 
@@ -16,7 +12,7 @@ function Detail() {
             <section className={style.detail_section}>
                 <article className={style.detail_top}>
                     <img src='../../../blogs/blogs_detail.png' />
-                    <h3></h3>
+                    <h3>{blog.title}</h3>
                 </article>
 
                 <article className={style.writer}>
@@ -36,9 +32,13 @@ function Detail() {
                     </div>
                 </article>
             </section>
+
+
         </>
     )
 }
 
 
 export default Detail
+
+
