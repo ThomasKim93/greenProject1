@@ -5,7 +5,7 @@ import support from '../pages/support/support.module.scss';
 function Support() {
   return (
     <>
-      
+      <h1>Support</h1>
     </>
   )
 }
