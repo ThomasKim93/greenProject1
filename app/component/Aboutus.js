@@ -1,8 +1,42 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import style from '../pages/aboutus/aboutus.module.scss';
 
 
 function Aboutus() {
+  const [isShowingList, setIsShowingList] = useState([false, false, false, false]);
+
+  const question = [
+    {
+      "question": "Can I customize the software packages to fit my specific needs?",
+      "answer": "Yes, we can work with you to customize software packages to meet your unique requirements. We offer flexible pricing tiers and can tailor solutions to fit your budget and business goals.",
+    },
+    {
+      "question": "How do you protect my company's data when it is stored on your platform?",
+      "answer": "Data security is our top priority. We employ industry-leading security measures, including encryption, access controls, and regular security audits, to safeguard your data. We also adhere to strict data privacy regulations and ensure compliance with relevant standards.",
+    },
+    {
+      "question": "Can I customize the software packages to fit my specific needs?",
+      "answer": "Yes, we can work with you to customize software packages to meet your unique requirements. We offer flexible pricing tiers and can tailor solutions to fit your budget and business goals.",
+    },
+    {
+      "question": "Can I control who has access to my company's data within your platform?",
+      "answer": "Yes, our platform provides granular access control features, allowing you to specify who can access and manage your data. You can create user roles with different permission levels to ensure data security and privacy.",
+    }
+  ]
+
+  const toggleItem = (index) => {
+    setIsShowingList((prev) => {
+      const newState = [...prev];
+      newState[index] = !newState[index];
+      return newState;
+    });
+  };
+
+
+
+
   return (
     <>
       <section className={style.about_section}>
@@ -114,21 +148,27 @@ function Aboutus() {
         </article>
 
         <article className={style.about_fourth}>
-        <div>
           <div>
-          <h3>Our Values</h3>
-          <p>We're here to help! Whether you have a question about our products or services, We're here to help! Whether you have a question about our products or services,</p>
+            <div>
+              <h3>Our Values</h3>
+              <p>We're here to help! Whether you have a question about our products or services, We're here to help! Whether you have a question about our products or services,</p>
+            </div>
+            <ul>
+              {question.map((data, index) => (
+                <li key={index} onClick={() => toggleItem(index)}>
+                  <p>
+                    {data.question}
+                    <span>{isShowingList[index] ? '-' : '+'}</span>
+                  </p>
+                  <p style={{ display: isShowingList[index] ? 'block' : 'none', padding: '10px' }}>
+                    {data.answer}
+                  </p>
+                </li>
+              ))}
+
+            </ul>
+
           </div>
-          <ul>
-            <li>Can I customize the software packages to fit my specific needs?<span>+</span></li>
-            <li>How do you protect my company's data when it is stored on your platform?<span>+</span></li>
-            <li> Can I customize the software packages to fit my specific needs?<span>+</span></li>
-            <li>Can I control who has access to my company's data within your platform?<span>+</span></li>
-          </ul>
-        
-        </div>
-
-
         </article>
 
       </section>

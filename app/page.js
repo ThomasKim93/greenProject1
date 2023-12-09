@@ -5,16 +5,22 @@ import Customer from './component/Customer'
 import Solution from './component/Solution'
 import Error from './component/Error'
 import Detail from './component/Detail'
+import Loading from './component/Loading'
+import Login from './component/Login'
+import Signup from './component/Signup'
 
 export default function Home() {
   return (
     <>
-    {/* <Aboutus/> */}
+    <Aboutus/>
     {/* <Customer/> */}
     {/* <Blogs/> */}
-    <Solution/>
+    {/* <Solution/> */}
     {/* <Error/> */}
     {/* <Detail/> */}
+    {/* <Loading/> */}
+    {/* <Login/> */}
+    {/* <Signup/> */}
     </>
   )
 }

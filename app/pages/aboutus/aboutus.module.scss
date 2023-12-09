@@ -138,7 +138,7 @@
 
     .about_third {
         background-color: white;
-        
+
         h3 {
             font-size: 32px;
             text-align: center;
@@ -149,78 +149,192 @@
             text-align: center;
         }
 
-        .about_third_introduce{ 
+        .about_third_introduce {
             display: flex;
             justify-content: center;
             gap: 60px;
 
-            div{
+            div {
                 display: flex;
                 align-items: center;
                 gap: 16px;
                 padding: 16px;
+
                 .social {
                     display: flex;
                     flex-direction: column;
                     gap: 16px;
                 }
+
                 .show {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+
                     img {}
-                    >p{
+
+                    >p {
                         font-size: 21px;
                         line-height: 25.41px;
                     }
-    
+
                     span {
                         font-size: 21px;
                         line-height: 25.41px;
                     }
                 }
             }
-            }
         }
+    }
 
-    .about_fourth{
+    .about_fourth {
         background-color: rgba(28, 73, 106, 1);
-        >div{
+
+        >div {
             display: flex;
             padding: 40px 60px 40px 60px;
             justify-content: space-around;
-            div{
+
+            div {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 480px;
 
-                h3{
+                h3 {
                     color: white;
                     font-size: 32px;
-                    line-height: 48px;    
+                    line-height: 48px;
                 }
-                p{
+
+                p {
                     color: white;
                     font-size: 17px;
                     line-height: 20.57px;
                 }
             }
-            ul{
+
+            ul {
                 width: 682px;
-                
-                li{
+
+                li {
+                    cursor: pointer;
                     display: flex;
-                    justify-content: space-between;
+                    flex-direction: column;
                     color: white;
                     font-size: 17px;
                     line-height: 20.57px;
                     margin-top: 10px;
-                    padding-bottom: 20px;
+                    padding-bottom: 10px;
                     border-bottom: 1px solid rgba(28, 154, 234, 0.25);
-                }
+
+                    p {
+                        margin: 0;
+
+                        &:nth-child(1) {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                        &:nth-child(2) {}
+
+                        span {}
+
+                    }
                 }
             }
         }
     }
-    
+}
+
+@media (max-width:380px) {
+
+    .about_section {
+
+        .about_start {
+            h3 {
+                margin: 0;
+            }
+
+            display: flex;
+            flex-direction: column;
+            padding: 20px 20px 100px 20px;
+
+            .about1 {
+                flex-direction: column;
+                gap: 0;
+
+                img {
+                    width: 350px;
+                    height: 230px;
+
+                }
+
+                .text {
+                    width: 100%;
+                    font-size: 14px;
+
+                    ul {
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        li {
+                            font-size: 24px;
+                            padding: 0;
+                            width: 37%;
+                            p {
+                                font-size: 14px;
+                                margin: 0;
+                            }
+                        }
+                    }
+                    div{
+                        width: 100%;
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .about_second{
+            padding: 20px;
+            div{
+                flex-direction: column;
+            div{
+                width: 100%;
+                gap: 16px;
+                .p{
+                    font-size: 21px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+            }
+        }
+
+        .about_third{
+            
+            .about_third_introduce{
+                gap: 0;
+                flex-direction: column;
+                div{
+                    gap: 0;
+                    flex-direction: column-reverse;
+                    .social{
+                        flex-direction: row;
+                    }
+                    .show{
+                        img{
+                            width: 310px;
+                            height: 380px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
