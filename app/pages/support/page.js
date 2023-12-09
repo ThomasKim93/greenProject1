@@ -1,4 +1,4 @@
-import Support from '@/app/component/Support'
+import Support from '../../comp/Support'
 import React from 'react'
 
 function page() {

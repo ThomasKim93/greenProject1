@@ -1,4 +1,4 @@
-import Solution from '@/app/component/Solution'
+import Solution from '../../comp/Solution'
 import React from 'react'
 
 function page() {
