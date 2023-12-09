@@ -1,4 +1,4 @@
-import Customer from '@/app/component/Customer'
+import Customer from '../../comp/Customer'
 import React from 'react'
 
 function page() {
