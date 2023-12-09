@@ -1,0 +1,19 @@
+.header{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu{
+        a{
+            text-decoration: none;
+            color: black;
+            margin-right: 15px;
+        }
+        >:nth-child(7){
+            border-radius: 5px;
+            padding: 12px 25px;
+            background-color: #1C9AEA;
+            color: white;
+        }
+    }
+}
