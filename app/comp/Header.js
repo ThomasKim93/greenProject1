@@ -12,11 +12,11 @@ function Header() {
             <div className={heraderSt.menu}>
                 <Link href='/'> Home </Link>
                 <Link href="../../pages/products"> Products </Link>
-                <Link href='/'> About Us </Link>
-                <Link href='/'> Blogs </Link>
+                <Link href="../../pages/aboutus"> About Us </Link>
+                <Link href="../../pages/blogs"> Blogs </Link>
                 <Link href="../../pages/Contact"> Contact Us </Link>
-                <Link href='/'> Log In </Link>
-                <Link href='/'> Sign Up </Link>
+                <Link href="../../pages/login"> Log In </Link>
+                <Link href="../../pages/signup"> Sign Up </Link>
             </div>
         </div>
     )

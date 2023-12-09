@@ -188,10 +188,12 @@
                 justify-content: center;
                 align-items: center;
                 img{
-                    
+                    width: 150px;
+                    border-radius: 20px;
                 }
                 >:nth-child(1n){
                     margin: 20px;
+
                 }
                 .Possibilitiestrns{
                     transform-style: preserve-3d;
@@ -312,21 +314,29 @@
             color: white;
             align-items: center;
             overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            .spantxt{
+                margin-bottom: 20px;
+            }
             .dashboardgroupimg{
                 padding: 100px;
                 display: flex;
-                margin-right: 170px;
+                margin: 2px 170px 150px;
                 flex-direction: column;
                 img{
                     position: absolute;
                     margin-right: 200px;
                     width: 610px;
                     left: 10%;
-                    bottom: -255%;
+                    bottom: -250%;
                 }
                 .dashboardtxtgroup{
                     display: flex;
                     justify-content: flex-end;
+                    flex-direction: column-reverse;
+                    list-style:circle;
                     &:active{
                         
                     }
@@ -334,8 +344,6 @@
                         list-style:circle;
                         .dashboardtxtmain{
                             font-size: 28px;
-                            text-align: left;
-                            list-style:circle;
                         }
                         .dashboardtxt{
                         }
@@ -458,7 +466,7 @@
             position: absolute ;
             text-align: center;
             left: 25%;
-            top: 548%;
+            top: 540%;
             color: white;
             b{
                 font-size: 32px;

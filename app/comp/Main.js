@@ -33,14 +33,20 @@ function Main() {
             clearInterval(interval3);
         };
     }, []);
+/* Platform */
+const thumbRef = useRef(null);
+const sliderRef = useRef(null);
+    const [isDragging, setIsDragging] = useState(false);
+    const [initialX, setInitialX] = useState(0);
 
-    /*  sliderbar*/
-    const thumbRef = useRef(null);
-    const sliderRef = useRef(null);
+    const handleMouseDown = (event) => {
+        setIsDragging(true);
+        setInitialX(event.clientX - thumbRef.current?.getBoundingClientRect()?.left || 0);
+    };
 
-    useEffect(() => {
-        const handleMouseMove = (event) => {
-            let newLeft = event.clientX - shiftX - sliderRef.current.getBoundingClientRect().left;
+    const handleMouseMove = (event) => {
+        if (isDragging && thumbRef.current) {
+            let newLeft = event.clientX - initialX - sliderRef.current.getBoundingClientRect().left;
 
             // the pointer is out of slider => lock the thumb within the boundaries
             if (newLeft < 0) {
@@ -52,35 +58,22 @@ function Main() {
             }
 
             thumbRef.current.style.left = newLeft + 'px';
-        };
-
-        const handleMouseUp = () => {
-            document.removeEventListener('mouseup', handleMouseUp);
-            document.removeEventListener('mousemove', handleMouseMove);
-        };
-
-        let shiftX;
-
-        if (thumbRef.current && sliderRef.current) {
-            thumbRef.current.onmousedown = function (event) {
-                event.preventDefault(); // prevent selection start (browser action)
-
-                shiftX = event.clientX - thumbRef.current.getBoundingClientRect().left;
-
-                document.addEventListener('mousemove', handleMouseMove);
-                document.addEventListener('mouseup', handleMouseUp);
-            };
-
-            thumbRef.current.ondragstart = function () {
-                return false;
-            };
         }
+    };
+
+    const handleMouseUp = () => {
+        setIsDragging(false);
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('mouseup', handleMouseUp);
 
         return () => {
-            document.removeEventListener('mouseup', handleMouseUp);
             document.removeEventListener('mousemove', handleMouseMove);
+            document.removeEventListener('mouseup', handleMouseUp);
         };
-    }, [thumbRef, sliderRef]);
+    }, [isDragging]);
 
     /*  Dashboard */
      const [activeDashboardItem, setActiveDashboardItem] = useState(0);
@@ -312,10 +305,12 @@ function Main() {
                         <p className={mainSt.PlatformSpending}> Spending  </p>
                         <p className={mainSt.PlatformSpending}> $100K </p>
                     </div>
-                    <div className={mainSt.Platformsliderbar}>
-                        <div className={mainSt.Platformthumb}>
+                    <div className={mainSt.Platformsliderbar} onMouseDown={handleMouseDown}  ref={sliderRef}>
+                    {thumbRef.current && (
+                        <div className={mainSt.Platformthumb} ref={thumbRef}>
                             <div className={mainSt.Platformthumbin}></div>
                         </div>
+                    )}
                     </div>
                     <div className={mainSt.Platformsavingtxt}>
                         <div className={mainSt.Platformsavingtxtgroup}>
@@ -345,16 +340,18 @@ function Main() {
                                 className={`${mainSt.dashboardtxtgroup} ${activeDashboardItem === index ? mainSt.active : ''}`}
                                 onClick={() => handleDashboardItemClick(index)}
                             >
+                                <div className={mainSt.dashboardactive}>
                                 {activeDashboardItem === index && (
                                     <>
                                         <img src={item.imageURL} alt={`Dashboard ${index + 1}`} />
+                                        <div className={mainSt.spantxt}>{item.additionalText}</div>
                                     </>
                                 )}
+                                </div>
                                 {/* 텍스트 렌더링 */}
                                 <div className={mainSt.dashboardflex}>
                                     <b className={mainSt.dashboardtxtmain}>{item.mainText}</b>
                                     <div className={mainSt.line}></div>
-                                    <p className={mainSt.dashboardtxt}>{item.additionalText}</p>
                                 </div>
                             </li>
                         ))}
@@ -387,6 +384,7 @@ function Main() {
                                 )}
                             </li>
                         ))}
+                        <div className={mainSt.line}></div>
                         {accordionItems.map((item, index) => (
                             <li
                                 key={index}

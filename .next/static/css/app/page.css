@@ -558,6 +558,10 @@
   justify-content: center;
   align-items: center;
 }
+.main_main__tHXmq .main_Possibilities__XMgQy .main_Possibilitiesimg__8z2wN .main_PossibilitiesGimg___z3Cp img {
+  width: 150px;
+  border-radius: 20px;
+}
 .main_main__tHXmq .main_Possibilities__XMgQy .main_Possibilitiesimg__8z2wN .main_PossibilitiesGimg___z3Cp > :nth-child(1n) {
   margin: 20px;
 }
@@ -670,11 +674,17 @@
   color: white;
   align-items: center;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.main_main__tHXmq .main_dashboardmain__eph6i .main_dashboardgroup__KvJVL .main_spantxt__pzMK8 {
+  margin-bottom: 20px;
 }
 .main_main__tHXmq .main_dashboardmain__eph6i .main_dashboardgroup__KvJVL .main_dashboardgroupimg__w02JO {
   padding: 100px;
   display: flex;
-  margin-right: 170px;
+  margin: 2px 170px 150px;
   flex-direction: column;
 }
 .main_main__tHXmq .main_dashboardmain__eph6i .main_dashboardgroup__KvJVL .main_dashboardgroupimg__w02JO img {
@@ -682,19 +692,19 @@
   margin-right: 200px;
   width: 610px;
   left: 10%;
-  bottom: -255%;
+  bottom: -250%;
 }
 .main_main__tHXmq .main_dashboardmain__eph6i .main_dashboardgroup__KvJVL .main_dashboardgroupimg__w02JO .main_dashboardtxtgroup___x9jr {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column-reverse;
+  list-style: circle;
 }
 .main_main__tHXmq .main_dashboardmain__eph6i .main_dashboardgroup__KvJVL .main_dashboardgroupimg__w02JO .main_dashboardtxtgroup___x9jr .main_dashboardflex__logI9 {
   list-style: circle;
 }
 .main_main__tHXmq .main_dashboardmain__eph6i .main_dashboardgroup__KvJVL .main_dashboardgroupimg__w02JO .main_dashboardtxtgroup___x9jr .main_dashboardflex__logI9 .main_dashboardtxtmain__emlR4 {
   font-size: 28px;
-  text-align: left;
-  list-style: circle;
 }
 .main_main__tHXmq .main_dashboardmain__eph6i .main_dashboardgroup__KvJVL .main_dashboardgroupimg__w02JO .main_line__Bxa0x {
   border-bottom: 1px solid white;
@@ -799,7 +809,7 @@
   position: absolute;
   text-align: center;
   left: 25%;
-  top: 548%;
+  top: 540%;
   color: white;
 }
 .main_main__tHXmq .main_contact__Hj_m5 .main_contacttitle__SEXFW b {

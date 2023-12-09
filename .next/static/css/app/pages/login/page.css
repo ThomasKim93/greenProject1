@@ -1,0 +1,204 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/pages/footer/footer.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.footer_footer__oBz2j {
+  margin-left: 70px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_logo__vhVIH {
+  margin-bottom: 10px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_logo__vhVIH img {
+  margin-bottom: 15px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_logo__vhVIH .footer_sns__rfN2V img {
+  margin-right: 30px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 b {
+  margin-bottom: 10px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footertopLink___830c {
+  text-decoration: none;
+  list-style: none;
+  color: #9BD2F5;
+  transition: 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footertopLink___830c .footer_footertop__nAQfC {
+  transform: rotateX(360deg) rotateZ(270deg);
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footertopLink___830c .footer_footertop__nAQfC .footer_footerstraight__RILJE {
+  transform: rotateZ(90deg);
+  color: #9BD2F5;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footertopLink___830c .footer_footerup__OfkvD {
+  writing-mode: vertical-rl;
+  transform: rotateZ(180deg);
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/pages/header/header.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.header_header__TgNnR {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_header__TgNnR .header_menu__Kfr_L a {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+.header_header__TgNnR .header_menu__Kfr_L > :nth-child(7) {
+  border-radius: 5px;
+  padding: 12px 25px;
+  background-color: #1C9AEA;
+  color: white;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/pages/login/login.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.login_login_section__x5YFW {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.login_login_section__x5YFW article div {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+.login_login_section__x5YFW article div h3 {
+  font-size: 28px;
+  color: #202D3F;
+}
+.login_login_section__x5YFW article div p {
+  font-size: 17px;
+  color: #B9BDC3;
+}
+.login_login_section__x5YFW .login_labels__hkT8o {
+  width: 95%;
+  margin: 0 auto;
+}
+.login_login_section__x5YFW .login_labels__hkT8o div {
+  width: 517px;
+}
+.login_login_section__x5YFW .login_labels__hkT8o div form {
+  padding: 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.login_login_section__x5YFW .login_labels__hkT8o div form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.login_login_section__x5YFW .login_labels__hkT8o div form label > p {
+  margin: 0;
+  color: #202D3F;
+}
+.login_login_section__x5YFW .login_labels__hkT8o div form label input {
+  border: 1px solid black;
+  background-color: transparent;
+  width: 100%;
+  padding: 15px 0px;
+}
+.login_login_section__x5YFW .login_labels__hkT8o div form label:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.login_login_section__x5YFW .login_labels__hkT8o div form label:nth-child(3) div {
+  width: 30%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.login_login_section__x5YFW .login_labels__hkT8o div form label:nth-child(3) div input {
+  border-radius: 8px;
+  width: 10%;
+}
+.login_login_section__x5YFW .login_labels__hkT8o div form label:nth-child(3) div p {
+  margin: 0;
+  color: #4D5765;
+}
+.login_login_section__x5YFW .login_labels__hkT8o div form label:nth-child(3) a {
+  width: 30%;
+  color: #5FB8F0;
+}
+.login_login_section__x5YFW .login_labels__hkT8o div form input {
+  border: 0;
+  background-color: #5FB8F0;
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px 0px;
+  color: white;
+}
+.login_login_section__x5YFW .login_seperate__Bd3D9 div {
+  width: 517px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.login_login_section__x5YFW .login_seperate__Bd3D9 div p {
+  color: #B9BDC3;
+}
+.login_login_section__x5YFW .login_seperate__Bd3D9 div span {
+  width: 40%;
+  display: block;
+  border-bottom: 1px solid #B9BDC3;
+  align-items: center;
+}
+.login_login_section__x5YFW .login_api__Oy4wO div {
+  width: 517px;
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+}
+.login_login_section__x5YFW .login_api__Oy4wO div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 219px;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.login_login_section__x5YFW .login_sign_up__hUFdU div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 517px;
+}
+.login_login_section__x5YFW .login_sign_up__hUFdU div p {
+  color: #202D3F;
+}
+.login_login_section__x5YFW .login_sign_up__hUFdU div a {
+  color: #516BFC;
+}

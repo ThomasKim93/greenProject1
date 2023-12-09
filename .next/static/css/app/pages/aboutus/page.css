@@ -1,0 +1,345 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/pages/header/header.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.header_header__TgNnR {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_header__TgNnR .header_menu__Kfr_L a {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+.header_header__TgNnR .header_menu__Kfr_L > :nth-child(7) {
+  border-radius: 5px;
+  padding: 12px 25px;
+  background-color: #1C9AEA;
+  color: white;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/pages/footer/footer.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.footer_footer__oBz2j {
+  margin-left: 70px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_logo__vhVIH {
+  margin-bottom: 10px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_logo__vhVIH img {
+  margin-bottom: 15px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_logo__vhVIH .footer_sns__rfN2V img {
+  margin-right: 30px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 b {
+  margin-bottom: 10px;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footertopLink___830c {
+  text-decoration: none;
+  list-style: none;
+  color: #9BD2F5;
+  transition: 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footertopLink___830c .footer_footertop__nAQfC {
+  transform: rotateX(360deg) rotateZ(270deg);
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footertopLink___830c .footer_footertop__nAQfC .footer_footerstraight__RILJE {
+  transform: rotateZ(90deg);
+  color: #9BD2F5;
+}
+.footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footertopLink___830c .footer_footerup__OfkvD {
+  writing-mode: vertical-rl;
+  transform: rotateZ(180deg);
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/pages/aboutus/aboutus.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.aboutus_about_section__0HgVH .aboutus_about_start__ffIUd {
+  background-color: rgba(34, 83, 120, 0.25);
+  padding: 40px 60px 40px 60px;
+  margin: 0 auto;
+}
+.aboutus_about_section__0HgVH .aboutus_about_start__ffIUd h3 {
+  font-size: 32px;
+  color: #202D3F;
+  text-align: center;
+}
+.aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ {
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+.aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ img {
+  width: 630px;
+  height: 407px;
+  border-radius: 10px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu {
+  width: 45%;
+  height: 407px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu ul {
+  display: flex;
+  border-top: 1px solid rgba(28, 154, 234, 0.5);
+  border-bottom: 1px solid rgba(28, 154, 234, 0.5);
+}
+.aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu ul li {
+  color: #202D3F;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 10px;
+  line-height: 43.57px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu ul li > p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20.57px;
+  color: #202D3F;
+}
+.aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu div {
+  width: 40%;
+  margin: 0 auto;
+}
+.aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu div button {
+  align-items: center;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  width: 184px;
+  height: 48px;
+  background-color: #1C9AEA;
+  padding: 14px 10px 14px 10px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_second__4OoZg {
+  margin-top: 50px;
+  padding: 40px 60px 40px 60px;
+  background-color: rgb(28, 73, 106);
+}
+.aboutus_about_section__0HgVH .aboutus_about_second__4OoZg h3 {
+  font-size: 32px;
+  text-align: center;
+  color: white;
+}
+.aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div > div {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 285px;
+  height: 260px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div > div:nth-child(1) {
+  background-color: rgb(127, 149, 177);
+  border: 1px solid rgb(127, 149, 177);
+}
+.aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div > div:nth-child(2) {
+  background-color: rgb(142, 156, 80);
+  border: 1px solid rgb(142, 156, 80);
+}
+.aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div > div:nth-child(3) {
+  background-color: rgb(92, 161, 153);
+  border: 1px solid rgb(92, 161, 153);
+}
+.aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div > div:nth-child(4) {
+  background-color: rgb(198, 106, 128);
+  border: 1px solid rgb(198, 106, 128);
+}
+.aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div > div p {
+  color: white;
+  font-size: 17px;
+  margin: 0;
+  text-align: center;
+}
+.aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div > div span {
+  color: white;
+  font-size: 21px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_third__EeN8x {
+  background-color: white;
+}
+.aboutus_about_section__0HgVH .aboutus_about_third__EeN8x h3 {
+  font-size: 32px;
+  text-align: center;
+}
+.aboutus_about_section__0HgVH .aboutus_about_third__EeN8x p {
+  font-size: 17px;
+  text-align: center;
+}
+.aboutus_about_section__0HgVH .aboutus_about_third__EeN8x .aboutus_about_third_introduce__bS8zT {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_third__EeN8x .aboutus_about_third_introduce__bS8zT div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_third__EeN8x .aboutus_about_third_introduce__bS8zT div .aboutus_social__u_imu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_third__EeN8x .aboutus_about_third_introduce__bS8zT div .aboutus_show__UXczi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.aboutus_about_section__0HgVH .aboutus_about_third__EeN8x .aboutus_about_third_introduce__bS8zT div .aboutus_show__UXczi > p {
+  font-size: 21px;
+  line-height: 25.41px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_third__EeN8x .aboutus_about_third_introduce__bS8zT div .aboutus_show__UXczi span {
+  font-size: 21px;
+  line-height: 25.41px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_fourth__oiHOQ {
+  background-color: rgb(28, 73, 106);
+}
+.aboutus_about_section__0HgVH .aboutus_about_fourth__oiHOQ > div {
+  display: flex;
+  padding: 40px 60px 40px 60px;
+  justify-content: space-around;
+}
+.aboutus_about_section__0HgVH .aboutus_about_fourth__oiHOQ > div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_fourth__oiHOQ > div div h3 {
+  color: white;
+  font-size: 32px;
+  line-height: 48px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_fourth__oiHOQ > div div p {
+  color: white;
+  font-size: 17px;
+  line-height: 20.57px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_fourth__oiHOQ > div ul {
+  width: 682px;
+}
+.aboutus_about_section__0HgVH .aboutus_about_fourth__oiHOQ > div ul li {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 17px;
+  line-height: 20.57px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(28, 154, 234, 0.25);
+}
+.aboutus_about_section__0HgVH .aboutus_about_fourth__oiHOQ > div ul li p {
+  margin: 0;
+}
+.aboutus_about_section__0HgVH .aboutus_about_fourth__oiHOQ > div ul li p:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 380px) {
+  .aboutus_about_section__0HgVH .aboutus_about_start__ffIUd {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 100px 20px;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_start__ffIUd h3 {
+    margin: 0;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ {
+    flex-direction: column;
+    gap: 0;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ img {
+    width: 350px;
+    height: 230px;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu {
+    width: 100%;
+    font-size: 14px;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu ul {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu ul li {
+    font-size: 24px;
+    padding: 0;
+    width: 37%;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu ul li p {
+    font-size: 14px;
+    margin: 0;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu div {
+    width: 100%;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_start__ffIUd .aboutus_about1__fOWSZ .aboutus_text__ZNfdu div button {
+    width: 100%;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_second__4OoZg {
+    padding: 20px;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div {
+    flex-direction: column;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div div {
+    width: 100%;
+    gap: 16px;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div div .aboutus_p__mNyJd {
+    font-size: 21px;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_second__4OoZg div div p {
+    font-size: 14px;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_third__EeN8x .aboutus_about_third_introduce__bS8zT {
+    gap: 0;
+    flex-direction: column;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_third__EeN8x .aboutus_about_third_introduce__bS8zT div {
+    gap: 0;
+    flex-direction: column-reverse;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_third__EeN8x .aboutus_about_third_introduce__bS8zT div .aboutus_social__u_imu {
+    flex-direction: row;
+  }
+  .aboutus_about_section__0HgVH .aboutus_about_third__EeN8x .aboutus_about_third_introduce__bS8zT div .aboutus_show__UXczi img {
+    width: 310px;
+    height: 380px;
+  }
+}
