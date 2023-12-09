@@ -173,6 +173,19 @@ function Solution() {
                         </ul>
                     </div>
                 </article>
+
+
+                <article className={style.contact}>
+                <img src='../../../aboutus/contact.png' className={style.contactimg}></img>
+                <div className={style.contacttitle}>
+                    <b> Contact Us</b>
+                    <p className={style.contacttxt}>Have questions or need assistance? We're here to help you find the perfect software solutions for your business.</p>
+                    <form className={style.contactPost}>
+                        <input type='email' placeholder="EMAIL" autoComplete="off" className={style.contactMail}></input>
+                        <button type='submit' className={style.contactSubmit}>Get Started</button>
+                    </form>
+                </div>
+            </article>
             </section>
         </>
     )

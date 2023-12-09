@@ -135,3 +135,61 @@
     }
 }
 }
+
+
+
+@media (max-width:380px) {
+    .signup_section{
+        width: 95%;
+        margin: 0 auto;
+        gap: 0px;
+        article{
+            div{
+                
+            }
+        }
+        .labels{
+            div{
+                width: 100%;
+                form{
+                    label{
+                        p{
+                            font-size: 14px;
+                        }
+                        &:nth-child(3){
+                            div{
+                                width: 40%;
+                            }
+                            a{
+                                font-size: 14px;
+                                width: 45%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .seperate{
+            div{
+                width: 100%;
+            }
+        }
+        .api{
+            div{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                button{
+                    width: 95%;
+                }
+            }
+        }
+        .log_in{
+            div{
+                width: 95%;
+                p{font-size: 14px;}
+                a{font-size: 14px;}
+            }
+        }
+    }
+}

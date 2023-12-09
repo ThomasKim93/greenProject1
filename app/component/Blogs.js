@@ -8,6 +8,13 @@ import blogData from '../pages/blogs/blog.json';
 function Blogs() {
     const [search,setSearch] = useState('');
     const [id,setId] = useState(0);
+    
+    const [selectedCategory, setSelectedCategory] = useState('all');
+    const [checked,setChecked] = useState([]);
+    const filterCategory = (category) => {
+      setSelectedCategory(category.toLowerCase());
+    };
+
 
     const filtersBologs = (blogs)=>{
       const lower = search.toLowerCase();
@@ -69,9 +76,9 @@ function Blogs() {
 
         <article className={style.menu}>
           <nav>
-            <a>All</a>
-            <a>Popular</a>
-            <a>Trending</a>
+            <a className={selectedCategory === 'all' ? style.active : ''} onClick={() => filterCategory('All')}>All</a>
+            <a className={selectedCategory === 'cyber security' ? style.active : ''} onClick={() => filterCategory('Popular')} >Popular</a>
+            <a className={selectedCategory === 'cyber security' ? style.active : ''} onClick={() => filterCategory('Trending')}>Trending</a>
           </nav>
           <div className={style.show_nav}>
           <ul className={style.nav_all}>

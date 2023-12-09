@@ -103,15 +103,18 @@ function Aboutus() {
         <article className={style.about_third}>
           <h3>Meet our team</h3>
           <p>We're here to help! Whether you have a question about our products or services, We're here to help! Whether you have a question about our products or services,</p>
+          
 
           <div className={style.about_third_introduce}>
             <div>
+             
               <ul className={style.social}>
                 <li><a href='#'><img src='../../../aboutus/Facebook.png' /></a></li>
                 <li><a href='#'><img src='../../../aboutus/Twitter.png' /></a></li>
                 <li><a href='#'><img src='../../../aboutus/Instagram.png' /></a></li>
                 <li><a href='#'><img src='../../../aboutus/Linkedin.png' /></a></li>
               </ul>
+              <div className={style.for_mobile}></div>
               <div className={style.show}>
                 <img src='../../../aboutus/lakhendra.png' />
                 <p>Lakhendra Kushwah</p>
@@ -119,12 +122,14 @@ function Aboutus() {
               </div>
             </div>
             <div>
+            
               <ul className={style.social}>
                 <li><a href='#'><img src='../../../aboutus/Facebook.png' /></a></li>
                 <li><a href='#'><img src='../../../aboutus/Twitter.png' /></a></li>
                 <li><a href='#'><img src='../../../aboutus/Instagram.png' /></a></li>
                 <li><a href='#'><img src='../../../aboutus/Linkedin.png' /></a></li>
               </ul>
+              <div className={style.for_mobile}></div>
               <div className={style.show}>
                 <img src='../../../aboutus/kaustubh.png' />
                 <p>Kaustubh Rai</p>
@@ -138,6 +143,7 @@ function Aboutus() {
                 <li><a href='#'><img src='../../../aboutus/Instagram.png' /></a></li>
                 <li><a href='#'><img src='../../../aboutus/Linkedin.png' /></a></li>
               </ul>
+              <div className={style.for_mobile}></div>
               <div className={style.show}>
                 <img src='../../../aboutus/mahendra.png' />
                 <p>Mahendra Kushwah</p>
@@ -157,10 +163,10 @@ function Aboutus() {
               {question.map((data, index) => (
                 <li key={index} onClick={() => toggleItem(index)}>
                   <p>
-                    {data.question}
+                    <span>{data.question}</span>
                     <span>{isShowingList[index] ? '-' : '+'}</span>
                   </p>
-                  <p style={{ display: isShowingList[index] ? 'block' : 'none', padding: '10px' }}>
+                  <p style={{ display: isShowingList[index] ? 'block' : 'none', padding_top: '10px' }}>
                     {data.answer}
                   </p>
                 </li>
@@ -170,6 +176,18 @@ function Aboutus() {
 
           </div>
         </article>
+
+        <article className={style.contact}>
+                <img src='../../../aboutus/contact.png' className={style.contactimg}></img>
+                <div className={style.contacttitle}>
+                    <b> Contact Us</b>
+                    <p className={style.contacttxt}>Have questions or need assistance? We're here to help you find the perfect software solutions for your business.</p>
+                    <form className={style.contactPost}>
+                        <input type='email' placeholder="EMAIL" autoComplete="off" className={style.contactMail}></input>
+                        <button type='submit' className={style.contactSubmit}>Get Started</button>
+                    </form>
+                </div>
+            </article>
 
       </section>
     </>

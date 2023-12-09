@@ -7,16 +7,17 @@ import blogData from '../pages/blogs/blog.json';
 
 
 function Detail() {
-    const router = useRouter();
-    const { clickedId } = router.query;
-    const blog = blogData.find(blog => blog.id === clickedId);
+    // const router = useRouter();
+    // const { clickedId } = router.query;
+    // const blog = blogData.find(blog => blog.id === clickedId);
 
     return (
         <>
             <section className={style.detail_section}>
                 <article className={style.detail_top}>
                     <img src='../../../blogs/blogs_detail.png' />
-                    <h3></h3>
+                    <p className={style.for_mobile}><span>10 min read</span><span>12 Nov 23</span></p>
+                    <h3>Critical tools every company needs.</h3>
                 </article>
 
                 <article className={style.writer}>
@@ -25,7 +26,7 @@ function Detail() {
                         <span>Travis Scott</span>
                         <p><img src='../../../blogs/star.png' /></p>
                     </figure>
-                    <p>10 min read<span>12 Nov 23</span></p>
+                    <p><span>10 min read</span><span>12 Nov 23</span></p>
                 </article>
 
                 <article className={style.text}>
