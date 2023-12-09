@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "image": "../../../blogs/blogs_featured.png",
+        "readTime": "10 min read",
+        "date": "12 Nov 23",
+        "title": "Critical tools every company needs.",
+        "content": "Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...",
+        "writer": {
+            "name": "Travis Scott",
+            "profileImage": "../../../blogs/Mask.png"
+        },
+        "starImage": "../../../blogs/star.png"
+    },
+    {
+        "id": 2,
+        "image": "../../../blogs/blogs_featured.png",
+        "readTime": "10 min read",
+        "date": "12 Nov 23",
+        "title": "Critical tools every company needs.",
+        "content": "Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...",
+        "writer": {
+            "name": "Travis Scott",
+            "profileImage": "../../../blogs/Mask.png"
+        },
+        "starImage": "../../../blogs/star.png"
+    },
+    {
+        "id": 3,
+        "image": "../../../blogs/blogs_featured.png",
+        "readTime": "10 min read",
+        "date": "12 Nov 23",
+        "title": "Critical tools every company needs.",
+        "content": "Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...",
+        "writer": {
+            "name": "Travis Scott",
+            "profileImage": "../../../blogs/Mask.png"
+        },
+        "starImage": "../../../blogs/star.png"
+    },
+    {
+        "id": 4,
+        "image": "../../../blogs/blogs_featured.png",
+        "readTime": "10 min read",
+        "date": "12 Nov 23",
+        "title": "Critical tools every company needs.",
+        "content": "Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...",
+        "writer": {
+            "name": "Travis Scott",
+            "profileImage": "../../../blogs/Mask.png"
+        },
+        "starImage": "../../../blogs/star.png"
+    },
+    {
+        "id": 5,
+        "image": "../../../blogs/blogs_featured2.png",
+        "readTime": "10 min read",
+        "date": "12 Nov 23",
+        "title": "Critical tools every company needs.",
+        "content": "hey let's take a picture",
+        "writer": {
+            "name": "Travis Scott",
+            "profileImage": "../../../blogs/Mask.png"
+        },
+        "starImage": "../../../blogs/star.png"
+    },
+    {
+        "id": 6,
+        "image": "../../../blogs/blogs_featured2.png",
+        "readTime": "10 min read",
+        "date": "12 Nov 23",
+        "title": "Critical tools every company needs.",
+        "content": "Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...",
+        "writer": {
+            "name": "Travis Scott",
+            "profileImage": "../../../blogs/Mask.png"
+        },
+        "starImage": "../../../blogs/star.png"
+    }
+]
