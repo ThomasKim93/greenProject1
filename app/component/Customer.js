@@ -146,7 +146,6 @@ function Customer() {
           </ul>
         </article>
       </section>
-    <p></p>
     </>
   )
 }

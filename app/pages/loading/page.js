@@ -9,4 +9,4 @@ function page() {
   )
 }
 
-export default p
+export default page
