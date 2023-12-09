@@ -1,0 +1,49 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-free-mode > .swiper-wrapper {
+    transition-timing-function: ease-out;
+    margin:  50px auto 110px
+}
+
+  .swiper-slide {
+    text-align: left;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .main_profilegroup__uRnWi{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto 100px;
+  }
+  .slideprofile{
+    width: 30%;
+  }
+  .main_profilestar__7qKi_{
+    width: 25%
+  }
+  .main_star__4JKLu{
+    width: 50%;
+    display: flex;
+  }
+  .main_name__k2mlC{
+    margin: 5px;
+  }
+  .swiper-slide img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0px 5px;
+  }
+  .swiper-slide > div > p{
+    display: flex;
+  }
