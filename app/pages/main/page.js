@@ -1,9 +1,11 @@
-import { Main } from 'next/document'
+import Main from '../../comp/Main'
 import React from 'react'
 
 function page() {
   return (
-    <div><Main/></div>
+    <div>
+      <Main/>
+    </div>
   )
 }
 
