@@ -1,0 +1,46 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/pages/detail/detail.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.detail_detail_section__aRGgi .detail_detail_top__rG9_l {
+  width: 90%;
+  margin: 0 auto;
+}
+.detail_detail_section__aRGgi .detail_detail_top__rG9_l img {
+  width: 100%;
+}
+.detail_detail_section__aRGgi .detail_detail_top__rG9_l h3 {
+  color: #202D3F;
+  font-size: 32px;
+}
+.detail_detail_section__aRGgi .detail_writer__FBFNY {
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #E1F1FC;
+  border-bottom: 1px solid #E1F1FC;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail_detail_section__aRGgi .detail_writer__FBFNY figure {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.detail_detail_section__aRGgi .detail_writer__FBFNY figure span {
+  color: #B9BDC3;
+}
+.detail_detail_section__aRGgi .detail_writer__FBFNY > p {
+  font-size: 17px;
+  color: #5FB8F0;
+}
+.detail_detail_section__aRGgi .detail_writer__FBFNY > p span {
+  color: #B9BDC3;
+  margin-left: 16px;
+}
+.detail_detail_section__aRGgi .detail_text__XXLqm {
+  width: 90%;
+  margin: 0 auto;
+}
+.detail_detail_section__aRGgi .detail_text__XXLqm div > p {
+  color: #58626F;
+}
