@@ -1,0 +1,127 @@
+.Servicesgroup{
+    background-color: #DEE5EB;
+    display: flex;
+    justify-content: flex-start;
+    padding: 70px;
+    align-items: center;
+    overflow: hidden;
+    .Services{
+        padding: 100px;
+        display: flex;
+        margin-right: 310px;
+        flex-direction: column;
+        .Servicestext{
+            display: flex;
+            width: 100%;
+            white-space: nowrap; /* 강제로 한줄 처리 명령어 */
+            animation-name: Services;
+            animation-duration: 10s;
+            animation-iteration-count: infinite; /* infinite=무한반복 */
+            animation-timing-function: linear ;
+                img{
+                    margin-right: 150px;
+                    width: 630px;
+                }
+                .Servicestextgroup{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h3{
+                        font-size: 32px;
+                        margin-bottom: 10px;
+                    }
+                    .Servicestxt{
+                        font-size: 17px;
+                    }       
+                }
+        }
+        @keyframes Services{ /* 애니메이션은 @keyframes랑 묶음 */ 
+            0%{transform: translateX(0%);}
+            100%{transform: translateX(-100%);}
+        }
+    }
+}
+.dashboardmain{
+    background-color:#225378 ;
+    .dashboardgroup{
+        color: white;
+        align-items: center;
+        overflow: hidden;
+        .dashboardgroupimg{
+            padding: 100px;
+            display: flex;
+            margin-right: 170px;
+            flex-direction: column;
+            img{
+                position: absolute;
+                margin-right: 200px;
+                width: 610px;
+                left: 10%;
+                top: 107%;
+            }
+            .dashboardtxtgroup{
+                display: flex;
+                justify-content: flex-end;
+                &:active{
+                    
+                }
+                .dashboardflex{
+                    list-style:circle;
+                    .dashboardtxtmain{
+                        font-size: 28px;
+                        text-align: left;
+                        list-style:circle;
+                    }
+                    .dashboardtxt{
+                    }
+                }
+            }
+            .line{
+                border-bottom: 1px solid white;
+                margin: 30px 0;
+            }
+        }
+    }
+}
+.contact{
+    width: 100%;
+    margin-bottom: 50px;   
+    .contactimg{
+        color: rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        width: 100%; 
+    }   
+    .contacttitle{
+        position: absolute ;
+        text-align: center;
+        left: 25%;
+        top: 210%;
+        color: white;
+        b{
+            font-size: 32px;
+        }
+        .contacttxt{
+            font-size: 17px;
+            margin-bottom:30px;
+        }
+        .contactPost{
+            .contactMail{
+                width: 40%;
+                font-size: 17px;
+                border: 0px;
+                padding: 15px;
+                border-radius: 5px 0 0 5px;
+            }
+            .contactSubmit{
+                font-size: 17px;
+                width: 20%;
+                border: 0px;
+                padding: 15px;
+                border-radius: 0 5px 5px 0;
+                background-color: #1C9AEA;
+                color: white;
+            }
+        }
+    }
+}
+
