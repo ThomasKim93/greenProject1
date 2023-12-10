@@ -13,13 +13,13 @@ export default function Home() {
   return (
     <>
      {/* <Aboutus/> */}
-    <Customer/> 
+    {/* <Customer/>  */}
     {/* <Blogs/> */}
     {/* <Detail/> */}
     {/* <Solution/>
     <Error/> */}
     {/* <Loading/> */}
-    {/* <Login/> */}
+    <Login/>
     {/* <Signup/> */}
     </>
   )
