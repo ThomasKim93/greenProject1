@@ -24,12 +24,16 @@ function Blogs() {
         );
     };
     const filteredBlogs = blogData.filter(filtersBologs);
-   
+  
     const router = useRouter();
-    const movedetail = (clickedId)=>{
-      setId(clickedId);
-      router.push(`/blogs/${clickedId}`)
-    }
+
+    const detail = (clickedId) => {
+      setId(clickedId)
+      const selectedBlog = blogData.find(blog => blog.id === clickedId);
+      router.push(`../pages/blogs/detail/${clickedId}`);
+    };
+
+
   return (
     <>
       <section className={style.blogs_section}>
@@ -84,14 +88,14 @@ function Blogs() {
           <ul className={style.nav_all}>
           { 
           filteredBlogs.map((blogs) => (
-          <li key = {blogs.id}  onClick={() =>movedetail(blogs.id)} >
+            <li key={blogs.id}  onClick={() => detail(blogs.id)}>
               <img src={blogs.image} />
               <p className={style.state}>{blogs.readTime}<span>{blogs.date}</span></p>
               <h3 className={style.title}>{blogs.title}</h3>
               <p>{blogs.content}</p>
               <div className={style.writer}>
                   <figure>
-                    <img src={blogs.writer.profileImage} /> <span>{blogs.writer.name}</span>
+                    <img src={blogs.profileImage} /> <span>{blogs.name}</span>
                   </figure>
                   <p><img src={blogs.starImage}/></p>
               </div>

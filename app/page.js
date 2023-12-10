@@ -12,15 +12,15 @@ import Signup from './component/Signup'
 export default function Home() {
   return (
     <>
-    <Aboutus/>
-    <Customer/> */
+     {/* <Aboutus/> */}
+    {/*<Customer/>  */}
     <Blogs/>
-    <Solution/>
-    <Error/>
-    <Detail/>
-    <Loading/>
-    <Login/>
-    <Signup/>
+    {/* <Detail/> */}
+    {/* <Solution/>
+    <Error/> */}
+    {/* <Loading/> */}
+    {/* <Login/>
+    <Signup/> */}
     </>
   )
 }

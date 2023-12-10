@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react'
 import style from '../pages/aboutus/aboutus.module.scss';
+import Headers from '../component/Header'
+import Footer from '../component/Footer'
 
 
 function Aboutus() {
@@ -39,6 +41,7 @@ function Aboutus() {
 
   return (
     <>
+    {/* <Headers/> */}
       <section className={style.about_section}>
         <article className={style.about_start}>
           <h3>About Us</h3>
@@ -190,6 +193,7 @@ function Aboutus() {
             </article>
 
       </section>
+      {/* <Footer/> */}
     </>
   )
 }

@@ -4,12 +4,10 @@ import React from 'react'
 import { useRouter } from 'next/router';
 import style from '../pages/detail/detail.module.scss'
 import blogData from '../pages/blogs/blog.json';
+import { useSeachParams } from 'next/navigation';
 
 
 function Detail() {
-    // const router = useRouter();
-    // const { clickedId } = router.query;
-    // const blog = blogData.find(blog => blog.id === clickedId);
 
     return (
         <>
