@@ -111,3 +111,42 @@
         }
     }
 }
+
+@media (max-width:380px) {
+    .customer_section{
+        width: 95%;
+        margin: 0 auto;
+        .customer1{
+            
+            h3{
+                font-size: 24px;
+            }
+            p{
+                width: 95%;
+                font-size: 14px;
+            }
+        }
+        .ani{
+            .aniimg{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .customer2{
+            .numbox{
+                li{
+                    &:nth-of-type(n+1){
+                        width: 35%;
+                        height: auto;
+                    }
+                    &:nth-of-type(3n){
+                        width: 95%
+                    }
+             
+                }
+            }
+        }
+
+    }
+}

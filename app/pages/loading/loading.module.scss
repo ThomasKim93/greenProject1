@@ -2,10 +2,10 @@
     height: 100vh;
     background-color: #E1F1FC;
     .loading_animation {
-        width: 500px;
-        height: 500px;
+        width: 50%;
+        height: 100vh;
         display: block;
-        margin: auto;
+        margin: 0 auto;
 
         .circle1 {
             fill: none;
@@ -80,4 +80,97 @@
         }
 
     }
+    .loading_animation2{
+        display: none;
+    }
+}
+
+@media (max-width:380px) {
+
+    .loading_section {
+        .loading_animation{
+            display: none;
+        }
+        .loading_animation2 {
+            width: 100%;
+            height: 100vh;
+            display: block;
+            margin: 0 auto;
+    
+            .circle1 {
+                fill: none;
+                stroke: #225378;
+                stroke-width: 27;
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                stroke-linecap: round; 
+                animation: draw1 3s linear infinite;
+    
+                @keyframes draw1 {
+                    0% {
+                        stroke-dashoffset: 1000;
+                    }
+    
+                    50% {
+                        stroke-dashoffset: 0;
+                    }
+    
+                    100% {
+                        stroke-dashoffset: -1000;
+                    }
+                }
+            }
+    
+            .circle2 {
+                fill: none;
+                stroke: #225378;
+                stroke-width: 27;
+                stroke-dasharray: 650;
+                stroke-dashoffset: 650;
+                stroke-linecap: round; 
+                animation: draw2 2.5s linear infinite;
+    
+                @keyframes draw2 {
+                    0% {
+                        stroke-dashoffset: -650;
+                    }
+    
+                    50% {
+                        stroke-dashoffset: 0;
+                    }
+    
+                    100% {
+                        stroke-dashoffset: 650;
+                    }
+                }
+            }
+    
+            .circle3{
+                fill: none;
+                stroke: #225378;
+                stroke-width: 27;
+                stroke-dasharray: 500;
+                stroke-dashoffset: 500;
+                stroke-linecap: round; 
+                animation: draw3 2s linear infinite;
+                
+                @keyframes draw3 {
+                    0% {
+                        stroke-dashoffset: 500;
+                    }
+    
+                    50% {
+                        stroke-dashoffset: 0;
+                    }
+    
+                    100% {
+                        stroke-dashoffset: -500;
+                    }
+                }
+            }
+    
+        }
+    }
+   
+
 }

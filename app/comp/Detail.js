@@ -1,15 +1,15 @@
 "use client"
 
 import React from 'react'
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import style from '../pages/detail/detail.module.scss'
 import blogData from '../pages/blogs/blog.json';
 
 
 function Detail() {
-    /* const router = useRouter();
+    const router = useRouter();
     const { clickedId } = router.query;
-    const blog = blogData.find(blog => blog.id === clickedId); */
+    const blog = blogData.find(blog => blog.id === clickedId);
 
     return (
         <>

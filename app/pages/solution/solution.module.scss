@@ -1,90 +1,194 @@
-.solution_section {
-    .solution1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h3 {
-            margin-bottom: 16px;
-            font-size: 32px;
-            color: #202D3F;
-        }
-
-        p {
-            width: 45%;
-            font-size: 17px;
-        }
-    }
-
-    .solution2 {
-        nav {
+.signup_section{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    article{
+        div{
             width: 95%;
             margin: 0 auto;
-            display: flex;
-            gap: 50px;
-
-            a {
-                cursor: pointer;
-                font-size: 24px;
-                padding: 10px 16px;
-                color: #4D5765;
+            text-align: center;
+            h3{
+                font-size: 28px;
+                color: #202D3F;
             }
-            a.active{
-                border-bottom: 3px solid #5FB8F0;
+            p{
+                font-size: 17px;
+                color: #B9BDC3;
             }
         }
     }
-
-    .soultion3 {
-        div {
-            width: 95%;
-            margin: 0 auto;
-
-            ul {
+    .labels{
+        width: 95%;
+        margin: 0 auto;
+        div{
+            width: 517px;
+            form{
+               
+                padding: 24px;
                 margin: 0 auto;
                 display: flex;
-                flex-wrap: wrap;
-                gap: 60px;
-                li {
-                    
-                    width: 18%;
-                    padding: 16px;
+                flex-direction: column;
+                gap: 23px;
+    
+                
+                label{
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    align-items: flex-start;
+                >p{
+                    margin: 0;
+                    color: #202D3F;
+                }
+                input{
+                    border: 1px solid black;
+                    background-color: transparent;
+                    width: 100%;
+                    padding: 15px 0px;
+                }
+                &:nth-child(3){
+                    display: flex;
+                    flex-direction: row;
                     align-items: center;
-                    border-radius: 10px;
-
-                    img {
-                        width: 20%;
-                    }
-                    span{
-                        font-size: 17px;
-                        color: #202D3F;
-                    }
-                    p{
-                        font-size: 14px;
-                        color: #B2B7BD;
-
+                    justify-content: space-between;
+                    div{
+                        width: 30%;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                     
+                        input{
+                        
+                            border-radius: 8px;
+                            width: 10%;
+                        }
+                        p{
+                            margin: 0;
+                            color: #4D5765;
+                        }
                     }
                     a{
-                        width: 100%;
-                        font-size: 14px;
+                        width: 30%;
                         color: #5FB8F0;
-                        border-top: 1px solid #E1F1FC;
-                        border-bottom: 1px solid #E1F1FC;
-                        padding: 11px 10px;
-                        text-align: center;
                     }
                 }
-                .more{
-                    background-color: #202D3F;
+                }
+                input{
+                    border: 0;
+                    background-color: #5FB8F0;
+                    border-radius: 8px;
+                    width: 100%;
+                    padding: 15px 0px;
                     color: white;
-                    padding: 18px 16px;
-                    >span{
-                        color: white;
+            }
+        }
+    }
+
+   
+}
+
+.seperate{
+    div{
+    width: 517px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+        p{color:#B9BDC3;}
+        span{
+            width: 40%;
+            display: block;
+            border-bottom: 1px solid #B9BDC3;
+                align-items: center;
+        }
+    }
+}
+.api{
+    div{    
+        width: 517px;   
+        display: flex;
+        justify-content: space-around;
+        gap: 12px;
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 219px;
+            padding: 12px;
+            font-size: 14px;
+            border: 1px solid black;
+            border-radius: 8px;
+            background-color: transparent;
+            img{}
+        }
+    }
+}
+
+.log_in{
+    div{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 517px;
+        p{color: #202D3F;}
+        a{color: #516BFC;}
+    }
+}
+}
+
+
+
+@media (max-width:380px) {
+    .signup_section{
+        width: 95%;
+        margin: 0 auto;
+        gap: 0px;
+        article{
+            div{
+                
+            }
+        }
+        .labels{
+            div{
+                width: 100%;
+                form{
+                    label{
+                        p{
+                            font-size: 14px;
+                        }
+                        &:nth-child(3){
+                            div{
+                                width: 40%;
+                            }
+                            a{
+                                font-size: 14px;
+                                width: 45%;
+                            }
+                        }
                     }
                 }
+            }
+        }
+        .seperate{
+            div{
+                width: 100%;
+            }
+        }
+        .api{
+            div{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                button{
+                    width: 95%;
+                }
+            }
+        }
+        .log_in{
+            div{
+                width: 95%;
+                p{font-size: 14px;}
+                a{font-size: 14px;}
             }
         }
     }

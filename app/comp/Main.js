@@ -171,10 +171,16 @@ const sliderRef = useRef(null);
         setActiveAccordion(activeAccordion === index ? null : index);
     };
 
+    const breakpoints = {
+            380: {
+            slidesPerView: 1,
+            }
+        };
     return (
         <div className={mainSt.main}>
             <div className={mainSt.top}>
-                <img src='../img/maintop.png'></img>
+                <img src='../img/maintop.png' className={mainSt.topimg}></img>
+                <img src='../img/mediamaintop.png' className={mainSt.topmediaimg}></img>
                 <h3>
                     Empower Your Business with Software <br></br> Solutions at Unbeatable Prices
                     <p className={mainSt.toptext}>
@@ -443,8 +449,10 @@ const sliderRef = useRef(null);
                     pagination={{
                         clickable: true,
                     }}
+                    
                     modules={[FreeMode, Pagination]}
                     className={mainSt.mySwiper}
+                    breakpoints={breakpoints}
                 >
                     <SwiperSlide>
                         <p className={mainSt.slidetxt}>
@@ -455,11 +463,11 @@ const sliderRef = useRef(null);
                         <div className={mainSt.review}>
                             <p className={mainSt.name}>Mary Smith</p>
                             <div className={mainSt.star}>
-                                <img src='../img/star.png' className={mainSt.profilestar}></img>
-                                <img src='../img/star.png' className={mainSt.profilestar}></img>
-                                <img src='../img/star.png' className={mainSt.profilestar}></img>
-                                <img src='../img/star.png' className={mainSt.profilestar}></img>
-                                <img src='../img/star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
                             </div>
                             </div>
                         </div>

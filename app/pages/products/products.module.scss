@@ -45,23 +45,30 @@
     background-color:#225378 ;
     .dashboardgroup{
         color: white;
-        align-items: center;
-        overflow: hidden;
+            align-items: center;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            .spantxt{
+                margin-bottom: 20px;
+            }
         .dashboardgroupimg{
             padding: 100px;
-            display: flex;
-            margin-right: 170px;
-            flex-direction: column;
+                display: flex;
+                margin: 2px 170px 150px;
+                flex-direction: column;
             img{
                 position: absolute;
                 margin-right: 200px;
                 width: 610px;
                 left: 10%;
-                top: 107%;
+                bottom: -53%;
             }
             .dashboardtxtgroup{
                 display: flex;
                 justify-content: flex-end;
+                flex-direction: column-reverse;
                 &:active{
                     
                 }
@@ -70,7 +77,6 @@
                     .dashboardtxtmain{
                         font-size: 28px;
                         text-align: left;
-                        list-style:circle;
                     }
                     .dashboardtxt{
                     }
@@ -125,3 +131,130 @@
     }
 }
 
+
+@media(max-width:380px){
+    .Servicesgroup{
+        background-color: #DEE5EB;
+        display: flex;
+        justify-content: flex-start;
+        padding: 70px;
+        align-items: center;
+        overflow: hidden;
+        .Services{
+            padding: 0px;
+            display: flex;
+            margin-right: 310px;
+            flex-direction: column;
+            .Servicestext{
+                display: flex;
+                width: 100%;
+                white-space: nowrap; /* 강제로 한줄 처리 명령어 */
+                animation-name: Services;
+                animation-duration: 10s;
+                animation-iteration-count: infinite; /* infinite=무한반복 */
+                animation-timing-function: linear ;
+                    img{
+                        margin-right: 150px;
+                        width: 630px;
+                    }
+                    .Servicestextgroup{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        h3{
+                            font-size: 32px;
+                            margin-bottom: 10px;
+                        }
+                        .Servicestxt{
+                            font-size: 17px;
+                        }       
+                    }
+            }
+            @keyframes Services{ /* 애니메이션은 @keyframes랑 묶음 */ 
+                0%{transform: translateX(0%);}
+                100%{transform: translateX(-100%);}
+            }
+        }
+    }
+    .dashboardmain{
+        background-color:#225378 ;
+        .dashboardgroup{
+            color: white;
+            align-items: center;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            .spantxt{
+                margin-bottom: 20px;
+            }
+            .dashboardgroupimg{
+                padding: 15px;
+                display: flex;
+                margin: 275px 0px 0px;
+                flex-direction: column;
+                img{
+                    position: absolute;
+                    margin-right: 200px;
+                    width: 350px;
+                    left: 4%;
+                    bottom: -20%;
+                }
+                .dashboardtxtgroup{
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-direction: column-reverse;
+                    list-style:circle;
+                    &:active{
+                        
+                    }
+                    .dashboardflex{
+                        list-style:circle;
+                        .dashboardtxtmain{
+                            font-size: 21px;
+                        }
+                        .dashboardtxt{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .line{
+                    border-bottom: 1px solid white;
+                    margin: 15px 0;
+                }
+            }
+        }
+        
+    }
+    .contact{
+        margin-bottom: 0;
+        .contactimg{
+            height: 375px;
+        }   
+        .contacttitle{
+            position: absolute ;
+            text-align: center;
+            left: 0%;
+            top: 175%;
+            color: white;
+            margin: 20px;
+            b{
+                font-size: 24px;
+            }
+            .contacttxt{
+                font-size: 17px;
+            }
+            .contactPost{
+                display: flex;
+                flex-direction: column;
+                .contactMail{
+                    width: 90%;
+                    margin-bottom: 20px;
+                }
+                .contactSubmit{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

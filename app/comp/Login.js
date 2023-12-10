@@ -62,6 +62,7 @@ function Login() {
 
 
             </section>
+            <div className={style.line}></div>
             <Footer/>
         </>
     )

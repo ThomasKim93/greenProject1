@@ -1,10 +1,12 @@
 import React from 'react'
 import style from '../pages/customer/customer.module.scss';
-
+import Headers from '../pages/header/page'
+import Footer from '../pages/footer/page'
 
 function Customer() {
   return (
     <>
+    <Headers/>
       <section className={style.customer_section}>
         <article className={style.customer1}>
           <h3>Customers</h3>
@@ -146,7 +148,7 @@ function Customer() {
           </ul>
         </article>
       </section>
-
+    <Footer/>
     </>
   )
 }

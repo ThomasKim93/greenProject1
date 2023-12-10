@@ -104,6 +104,9 @@
                 font-size: 24px;
                 cursor: pointer;
             }
+            a.active{
+                border-bottom: 3px solid #5FB8F0;
+            }
         }
         .show_nav{
             padding: 40px 0px;
@@ -113,10 +116,10 @@
                 justify-content: space-around;
                 gap:60px;
                 li {
+                    box-shadow: 1px 1px 1px 1px #f2efef;
                     padding: 16px;
                     width: 400px;
                     border-radius: 10px;
-                    box-shadow: 0 4 0.1 white;
                     img {
                         width: 100%;
                     }
@@ -156,6 +159,110 @@
                         }
 
                         p {}
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width:380px) {
+   
+    .blogs_section{
+       
+        .blogs_top{
+            width: 95%;
+            margin: 0 auto;
+            h3{
+                font-size: 24px;
+            }
+            p{
+                font-size: 14px;
+            }
+            label{
+                width: 90%;
+                input{}
+            }
+        }
+
+        .featured{
+            .featured_flex1{
+                .first_div{
+                    h1{
+                        font-size: 17px;
+                    }
+                }
+                .second_div{
+                    flex-direction: column;
+                    .img_div{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .contets_div{
+
+                        >div{
+                            .state{}
+                            h3{
+                                font-size: 21px;
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                        }
+                        .writer{
+                            gap:70px;
+                            figure{
+                                display: flex;
+                                align-items: center;
+                                width: 50%;
+                                gap: 20px;
+                                
+                                img{
+
+                                }
+                                span{
+                                    font-size: 14px;
+                                    width: 50x;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        .menu{
+            nav{
+                a{
+                    font-size: 17px;
+                }
+            }
+            .show_nav{
+                .nav_all{
+                    gap: 20px;
+                    li{
+                        width: 85%;
+                        h3{
+                            font-size: 21px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                        .writer{
+                            figure{
+                                img{
+                                    width: 30%;
+                                    span{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                       
+                        }
                     }
                 }
             }

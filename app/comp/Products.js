@@ -104,16 +104,18 @@ function Products() {
                                 className={`${productsSt.dashboardtxtgroup} ${activeDashboardItem === index ? productsSt.active : ''}`}
                                 onClick={() => handleDashboardItemClick(index)}
                             >
+                                <div className={productsSt.dashboardactive}>
                                 {activeDashboardItem === index && (
                                     <>
                                         <img src={item.imageURL} alt={`Dashboard ${index + 1}`} />
+                                        <div className={productsSt.spantxt}>{item.additionalText}</div>
                                     </>
                                 )}
+                                </div>
                                 {/* 텍스트 렌더링 */}
                                 <div className={productsSt.dashboardflex}>
                                     <b className={productsSt.dashboardtxtmain}>{item.mainText}</b>
                                     <div className={productsSt.line}></div>
-                                    <p className={productsSt.dashboardtxt}>{item.additionalText}</p>
                                 </div>
                             </li>
                         ))}
