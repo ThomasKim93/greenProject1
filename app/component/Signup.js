@@ -1,6 +1,32 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import style from '../pages/signup/signup.module.scss';
+
+
 function Signup() {
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit2 = (e) => {
+        e.preventDefault();
+        const existingData = JSON.parse(localStorage.getItem('userData')) || [];
+
+        const newData = [...existingData, { email, password }];
+
+        localStorage.setItem('userData', JSON.stringify(newData));
+
+        console.log('All Data:', newData);
+
+        setEmail('');
+        setPassword('');
+
+        console.log('All Data:', newData);
+        console.log('Last Entry:', { email, password }); 
+    }
+
+
     return (
         <>
             <section className={style.signup_section}>
@@ -13,14 +39,18 @@ function Signup() {
 
                 <article className={style.labels}>
                     <div>
-                        <form>
+                    <form onSubmit={handleSubmit2} >
                             <label>
                                 <p>Email</p>
-                                <input />
+                                <input type='email' name='email'
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)} />
                             </label>
                             <label>
                                 <p>Password</p>
-                                <input />
+                                <input type='password' name='password'
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)} />
                             </label>
                             <label >
                                 <div>
@@ -29,7 +59,7 @@ function Signup() {
                                 </div>
                                 <a href="#">Forgot Password?</a>
                             </label>
-                            <input type="submit" value="Sign Up"></input>
+                            <input type="submit" value="Sign up"></input>
                         </form>
                     </div>
                 </article>

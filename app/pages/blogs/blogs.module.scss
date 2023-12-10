@@ -103,6 +103,9 @@
 
     .menu {
         nav {
+            width: 95%;
+            margin: 0 auto;
+        
 
             a {
                 padding: 10px 16px;
@@ -117,7 +120,7 @@
 
         .show_nav {
             padding: 40px 0px;
-
+            
             .nav_all {
                 display: flex;
                 flex-wrap: wrap;

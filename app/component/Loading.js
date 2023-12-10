@@ -8,7 +8,7 @@ function Loading() {
 
     return (
         <>
-            <section className={style.loading_section}>
+            {/* <section className={style.loading_section}>
                 <svg className={style.loading_animation}>
                     <circle className={style.circle1}
                         cx="50%" cy="50%" r="150" />
@@ -30,7 +30,11 @@ function Loading() {
                     <circle className={style.circle3}
                         cx="50%" cy="50%" r="35"/>
                 </svg>
-            </section >
+            </section > */}
+
+            <section>
+            <div className={style.pulsating_circle}></div>
+            </section>
         </>
     )
 }

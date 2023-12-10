@@ -1,10 +1,31 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import style from '../pages/customer/customer.module.scss';
+import { useRouter } from 'next/router'; 
+import Loading from './Loading';
+
 
 
 function Customer() {
+
+  const [loading,setLoading] = useState (true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    };
+    fetchData();
+  }, []); 
+  
   return (
     <>
+
+{loading ? (
+        // 로딩 중이면 로딩 컴포넌트를 렌더링
+        <Loading />
+      ) : (
       <section className={style.customer_section}>
         <article className={style.customer1}>
           <h3>Customers</h3>
@@ -146,6 +167,7 @@ function Customer() {
           </ul>
         </article>
       </section>
+       )}
     </>
   )
 }
