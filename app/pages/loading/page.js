@@ -1,4 +1,4 @@
-import Loading from '../../comp/Loading'
+import Loading from '../../component/Loading'
 import React from 'react'
 
 function page() {

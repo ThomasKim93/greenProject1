@@ -46,6 +46,10 @@
                 flex-direction: column;
                 display: flex;
             }
+            &:nth-last-child(1){
+                color: red;
+            }
+            
             input{
                 margin-top: 5px;
                 padding: 15px;

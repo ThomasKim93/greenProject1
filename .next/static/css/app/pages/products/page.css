@@ -8,12 +8,14 @@
   align-items: center;
 }
 .header_header__TgNnR .header_menu__Kfr_L {
-  margin-left: 55%;
+  margin-left: 44%;
+  display: flex;
+  align-items: center;
 }
 .header_header__TgNnR .header_menu__Kfr_L a {
   text-decoration: none;
   color: black;
-  margin-right: 15px;
+  margin: 0 15px 0px;
 }
 .header_header__TgNnR .header_menu__Kfr_L > :nth-child(7) {
   border-radius: 5px;
@@ -28,13 +30,41 @@
   display: none;
 }
 
+.header_menuItem__p4Q4g {
+  text-align: center;
+  position: relative;
+}
+.header_menuItem__p4Q4g .header_subMenu__CVJCs {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  width: 300px;
+  height: 150px;
+  background-color: #efebeb;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px white;
+  padding: 10px;
+}
+.header_menuItem__p4Q4g .header_subMenu__CVJCs a {
+  color: rgb(4, 4, 4);
+}
+.header_menuItem__p4Q4g:hover .header_subMenu__CVJCs {
+  display: block;
+}
+
+.header_menuOptionsOverlay__Dkvzv {
+  display: none;
+}
+
 @media (max-width: 390px) {
   .header_header__TgNnR {
     margin: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #DEE5EB;
+    background-color: white;
   }
   .header_header__TgNnR .header_menu__Kfr_L {
     margin: 10px 25px;
@@ -54,6 +84,7 @@
   .header_header__TgNnR .header_menubar__XR9nI {
     display: block;
     width: 45px;
+    margin-right: 10px;
   }
   .header_header__TgNnR .header_menu1__Gtv0U {
     display: none;
@@ -81,11 +112,13 @@
     margin: 20px;
   }
   .header_menuOptions___JG3C > :nth-child(7) {
-    width: 100%;
+    width: 90%;
     background-color: #1C9AEA;
     padding: 20px;
     color: white;
     text-align: center;
+    border-radius: 10px;
+    margin: 0px;
   }
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -108,6 +141,7 @@
 .footer_footer__oBz2j .footer_logogroup__53FSy .footer_topbtngroup__Uwzk_ .footer_logo__vhVIH {
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
 }
 .footer_footer__oBz2j .footer_logogroup__53FSy .footer_topbtngroup__Uwzk_ .footer_logo__vhVIH img {
   margin: 0 35px 10px 0;
@@ -179,6 +213,7 @@
   .footer_footer__oBz2j .footer_logogroup__53FSy .footer_topbtngroup__Uwzk_ .footer_logo__vhVIH {
     display: flex;
     align-items: flex-start;
+    flex-direction: row;
   }
   .footer_footer__oBz2j .footer_logogroup__53FSy .footer_topbtngroup__Uwzk_ .footer_logo__vhVIH img {
     margin: 0 35px 10px 0;
@@ -231,26 +266,26 @@
 @charset "UTF-8";
 .products_Servicesgroup__ARNrS {
   background-color: #DEE5EB;
-  display: flex;
-  justify-content: flex-start;
   padding: 70px;
-  align-items: center;
-  overflow: hidden;
 }
 .products_Servicesgroup__ARNrS .products_Services__rVMJ_ {
   padding: 100px;
   display: flex;
   margin-right: 310px;
   flex-direction: column;
+  /*  @keyframes Services{ 
+       0%{transform: translateX(0%);}
+       100%{transform: translateX(-100%);}
+   } */
 }
 .products_Servicesgroup__ARNrS .products_Services__rVMJ_ .products_Servicestext__y33i2 {
   display: flex;
   width: 100%;
-  white-space: nowrap; /* 강제로 한줄 처리 명령어 */
-  animation-name: products_Services__rVMJ_;
+  /* white-space: nowrap; 
+  animation-name: Services;
   animation-duration: 10s;
-  animation-iteration-count: infinite; /* infinite=무한반복 */
-  animation-timing-function: linear;
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear ; */
 }
 .products_Servicesgroup__ARNrS .products_Services__rVMJ_ .products_Servicestext__y33i2 img {
   margin-right: 150px;
@@ -267,14 +302,6 @@
 }
 .products_Servicesgroup__ARNrS .products_Services__rVMJ_ .products_Servicestext__y33i2 .products_Servicestextgroup__T4Nn8 .products_Servicestxt__rpOKs {
   font-size: 17px;
-}
-@keyframes products_Services__rVMJ_ { /* 애니메이션은 @keyframes랑 묶음 */
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
 .products_dashboardmain__C6h6I {
@@ -302,7 +329,7 @@
   margin-right: 200px;
   width: 610px;
   left: 10%;
-  bottom: -53%;
+  bottom: -177%;
 }
 .products_dashboardmain__C6h6I .products_dashboardgroup___9sMw .products_dashboardgroupimg__HniUz .products_dashboardtxtgroup__Xa3eP {
   display: flex;
@@ -334,7 +361,7 @@
   position: absolute;
   text-align: center;
   left: 25%;
-  top: 210%;
+  top: 355%;
   color: white;
 }
 .products_contact__xAYEt .products_contacttitle__QabAu b {
@@ -364,30 +391,24 @@
 @media (max-width: 380px) {
   .products_Servicesgroup__ARNrS {
     background-color: #DEE5EB;
-    display: flex;
-    justify-content: flex-start;
-    padding: 70px;
+    padding: 7px;
     align-items: center;
     overflow: hidden;
   }
   .products_Servicesgroup__ARNrS .products_Services__rVMJ_ {
     padding: 0px;
     display: flex;
-    margin-right: 310px;
+    margin: 0px;
     flex-direction: column;
   }
   .products_Servicesgroup__ARNrS .products_Services__rVMJ_ .products_Servicestext__y33i2 {
-    display: flex;
+    display: block;
     width: 100%;
-    white-space: nowrap; /* 강제로 한줄 처리 명령어 */
-    animation-name: products_Services__rVMJ_;
-    animation-duration: 10s;
-    animation-iteration-count: infinite; /* infinite=무한반복 */
-    animation-timing-function: linear;
   }
   .products_Servicesgroup__ARNrS .products_Services__rVMJ_ .products_Servicestext__y33i2 img {
-    margin-right: 150px;
-    width: 630px;
+    margin-top: 35px;
+    width: 365px;
+    height: 270px;
   }
   .products_Servicesgroup__ARNrS .products_Services__rVMJ_ .products_Servicestext__y33i2 .products_Servicestextgroup__T4Nn8 {
     display: flex;
@@ -434,7 +455,7 @@
     margin-right: 200px;
     width: 350px;
     left: 4%;
-    bottom: -20%;
+    bottom: -197%;
   }
   .products_dashboardmain__C6h6I .products_dashboardgroup___9sMw .products_dashboardgroupimg__HniUz .products_dashboardtxtgroup__Xa3eP {
     display: flex;
@@ -465,7 +486,7 @@
     position: absolute;
     text-align: center;
     left: 0%;
-    top: 175%;
+    top: 355%;
     color: white;
     margin: 20px;
   }

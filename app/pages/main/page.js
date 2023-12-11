@@ -1,4 +1,4 @@
-import Main from '../../comp/Main'
+import Main from '../../component/Main'
 import React from 'react'
 
 function page() {

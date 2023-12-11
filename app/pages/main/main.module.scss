@@ -161,7 +161,7 @@
         display: flex;
         justify-content: space-between;
         h3{
-            margin-top: 120px;
+            margin-top: 210px;
             width: 40%;
             text-align: center;
             font-size: 32px;
@@ -183,7 +183,7 @@
             }
         }
         .Possibilitiesimg{
-            width: 40%;
+            width: 45%;
             .PossibilitiesGimg{
                 display: flex;
                 margin-right: 130px;
@@ -194,11 +194,15 @@
                     width: 150px;
                     border-radius: 20px;
                 }
+                >:nth-child(5){
+                    width: 200px;
+                    height: 200px;
+                }
                 >:nth-child(1n){
                     margin: 20px;
-
                 }
-                .Possibilitiestrns{
+                .Possibilitiestrns
+                {
                     transform-style: preserve-3d;
                     position: relative;
                     transition: 1s;
@@ -211,6 +215,24 @@
                     background-color: #292E3C;
                     border: 1px solid white;
                     border-radius: 20px;
+                }
+                >:nth-child(5){
+                    margin: 20px;
+                    img{
+                        width: 200px;
+                    }
+                }
+                >:nth-child(1){
+                    margin-bottom: -30px;
+                }
+                >:nth-child(3){
+                    margin-bottom: -30px;
+                }
+                >:nth-child(7){
+                    margin-top: -30px;
+                }
+                >:nth-child(9){
+                    margin-top: -30px;
                 }
             }
             .Possibilitiestrns:hover{
@@ -249,9 +271,9 @@
                 border-radius: 5px;
                 background: #E0E0E0;
                 background: linear-gradient(to left top, #E0E0E0, #EEEEEE);
-                width: 95%;
+                width: 100%;
                 height: 15px;
-                margin-left: 20px;
+                margin-left: 0px;
                 .Platformthumb{
                     width: 30px;
                     height: 30px;
@@ -259,7 +281,7 @@
                     position: relative;
                     left: 10px;
                     top: -8px;
-                    background: #134F8B;
+                    background: #1C9AEA;
                     cursor: pointer;
                     .Platformthumbin{
                         width: 10px;
@@ -269,6 +291,7 @@
                         left: 10px;
                         top: 10px;
                         background: white;
+                        
                     }
                 }
             }
@@ -333,7 +356,7 @@
                     margin-right: 200px;
                     width: 610px;
                     left: 10%;
-                    bottom: -262%;
+                    bottom: -267%;
                 }
                 .dashboardtxtgroup{
                     display: flex;
@@ -456,6 +479,7 @@
             }
         }
     }
+    
     .contact{
         width: 100%;
         margin-bottom: 50px;   
@@ -679,33 +703,53 @@
                 width: 100%;
                 .PossibilitiesGimg{
                     display: flex;
-                    margin: 10px;
+                    margin: 0px;
                     flex-wrap: wrap;
                     justify-content: center;
                     align-items: center;
                     img{
-                        width: 150px;
-                        border-radius: 20px;
+                        width: 70px;
+                        border-radius: 10px;
+                    }
+                    >:nth-child(5){
+                        width: 100px;
+                        height: 100px;
                     }
                     >:nth-child(1n){
-                        margin: 20px;
-    
+                        margin: 15px;
                     }
-                    .Possibilitiestrns{
+                    .Possibilitiestrns
+                    {
                         transform-style: preserve-3d;
-                        margin: 20px;
                         position: relative;
                         transition: 1s;
                         img{
                             transform: translateZ(-10px)   ;
                             transform-origin: 100% 50%;
-                            width: 75px;
                         }
                     }
                     >:nth-child(1n){
                         background-color: #292E3C;
                         border: 1px solid white;
-                        border-radius: 20px;
+                        border-radius: 10px;
+                    }
+                    >:nth-child(5){
+                        margin: 20px;
+                        img{
+                            width: 100px;
+                        }
+                    }
+                    >:nth-child(1){
+                        margin-bottom: -15px;
+                    }
+                    >:nth-child(3){
+                        margin-bottom: -15px;
+                    }
+                    >:nth-child(7){
+                        margin-top:-15px;
+                    }
+                    >:nth-child(9){
+                        margin-top: -15px;
                     }
                 }
                 .Possibilitiestrns:hover{
@@ -717,12 +761,12 @@
             display: flex;
             align-items: center;
             flex-direction: column-reverse;
-            margin: 10px;
+            margin: 20px;
             .Platform{
                 margin: 10px;
                 background-color: #134F8B;
                 width: 90%;
-                border-radius: 20px;
+                border-radius: 10px;
                 color: white;
                 padding: 15px;
                 .Platformtitle{
@@ -837,8 +881,8 @@
                         position: absolute;
                         margin-right: 200px;
                         width: 350px;
-                        left: 5%;
-                        bottom: -440%;
+                        left: 4%;
+                        bottom: -432%;
                     }
                     .dashboardtxtgroup{
                         display: flex;
@@ -982,7 +1026,7 @@
                 position: absolute ;
                 text-align: center;
                 left: 0%;
-                top: 730%;
+                top: 725%;
                 color: white;
                 margin: 20px;
                 b{

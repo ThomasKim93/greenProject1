@@ -6,10 +6,8 @@
         "date": "12 Nov 23",
         "title": "Critical tools every company needs.",
         "content": "Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...",
-        "writer": {
-            "name": "Travis Scott",
-            "profileImage": "../../../blogs/Mask.png"
-        },
+        "name": "Travis Scott",
+        "profileImage": "../../../blogs/Mask.png",
         "starImage": "../../../blogs/star.png"
     },
     {
@@ -18,11 +16,9 @@
         "readTime": "10 min read",
         "date": "12 Nov 23",
         "title": "Critical tools every company needs.",
-        "content": "Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...",
-        "writer": {
-            "name": "Travis Scott",
-            "profileImage": "../../../blogs/Mask.png"
-        },
+        "content": "Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether you're seeking a robust productivity suite, a sophisticated design tool, or a specialized industry solution, our platform has something for every need. Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether you're seeking a robust productivity suite, a sophisticated design tool, or a specialized industry solution, our platform has something for every need. Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether you're seeking a robust productivity suite, a sophisticated design tool, or a specialized industry solution, our platform has something for every need. Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether you're seeking a robust productivity suite, a sophisticated design tool, or a specialized industry solution, our platform has something for every need. Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether you're seeking a robust productivity suite, a sophisticated design tool, or a specialized industry solution, our platform has something for every need. Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether you're seeking a robust productivity suite, a sophisticated design tool, or a specialized industry solution, our platform has something for every need. Our curated marketplace features a vast collection of software solutions from leading providers, ensuring that businesses have access to the best tools available to address their unique needs and challenges. Whether ",
+        "name": "Travis Scott",
+        "profileImage": "../../../blogs/Mask.png",
         "starImage": "../../../blogs/star.png"
     },
     {
@@ -32,10 +28,8 @@
         "date": "12 Nov 23",
         "title": "Critical tools every company needs.",
         "content": "Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...",
-        "writer": {
-            "name": "Travis Scott",
-            "profileImage": "../../../blogs/Mask.png"
-        },
+        "name": "Travis Scott",
+        "profileImage": "../../../blogs/Mask.png",
         "starImage": "../../../blogs/star.png"
     },
     {
@@ -45,36 +39,31 @@
         "date": "12 Nov 23",
         "title": "Critical tools every company needs.",
         "content": "Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...",
-        "writer": {
-            "name": "Travis Scott",
-            "profileImage": "../../../blogs/Mask.png"
-        },
+        "name": "Travis Scott",
+        "profileImage": "../../../blogs/Mask.png",
         "starImage": "../../../blogs/star.png"
     },
     {
         "id": 5,
-        "image": "../../../blogs/blogs_featured2.png",
-        "readTime": "10 min read",
-        "date": "12 Nov 23",
-        "title": "Critical tools every company needs.",
-        "content": "hey let's take a picture",
-        "writer": {
-            "name": "Travis Scott",
-            "profileImage": "../../../blogs/Mask.png"
-        },
-        "starImage": "../../../blogs/star.png"
-    },
-    {
-        "id": 6,
-        "image": "../../../blogs/blogs_featured2.png",
+        "image": "../../../blogs/blogs_featured.png",
         "readTime": "10 min read",
         "date": "12 Nov 23",
         "title": "Critical tools every company needs.",
         "content": "Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...",
-        "writer": {
-            "name": "Travis Scott",
-            "profileImage": "../../../blogs/Mask.png"
-        },
+        "name": "Travis Scott",
+        "profileImage": "../../../blogs/Mask.png",
+        "starImage": "../../../blogs/star.png"
+    },
+    {
+        "id": 6,
+        "image": "../../../blogs/blogs_featured.png",
+        "readTime": "10 min read",
+        "date": "12 Nov 23",
+        "title": "Critical tools every company needs.",
+        "content": "Gone are the days of scouring multiple websites, managing numerous subscriptions, and dealing with complex procurement processes...",
+        "name": "Travis Scott",
+        "profileImage": "../../../blogs/Mask.png",
         "starImage": "../../../blogs/star.png"
     }
+
 ]

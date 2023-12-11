@@ -1,10 +1,6 @@
 .Servicesgroup{
     background-color: #DEE5EB;
-    display: flex;
-    justify-content: flex-start;
     padding: 70px;
-    align-items: center;
-    overflow: hidden;
     .Services{
         padding: 100px;
         display: flex;
@@ -13,11 +9,11 @@
         .Servicestext{
             display: flex;
             width: 100%;
-            white-space: nowrap; /* 강제로 한줄 처리 명령어 */
+            /* white-space: nowrap; 
             animation-name: Services;
             animation-duration: 10s;
-            animation-iteration-count: infinite; /* infinite=무한반복 */
-            animation-timing-function: linear ;
+            animation-iteration-count: infinite; 
+            animation-timing-function: linear ; */
                 img{
                     margin-right: 150px;
                     width: 630px;
@@ -35,10 +31,10 @@
                     }       
                 }
         }
-        @keyframes Services{ /* 애니메이션은 @keyframes랑 묶음 */ 
+       /*  @keyframes Services{ 
             0%{transform: translateX(0%);}
             100%{transform: translateX(-100%);}
-        }
+        } */
     }
 }
 .dashboardmain{
@@ -63,7 +59,7 @@
                 margin-right: 200px;
                 width: 610px;
                 left: 10%;
-                bottom: -53%;
+                bottom: -177%;
             }
             .dashboardtxtgroup{
                 display: flex;
@@ -101,7 +97,7 @@
         position: absolute ;
         text-align: center;
         left: 25%;
-        top: 210%;
+        top: 355%;
         color: white;
         b{
             font-size: 32px;
@@ -135,27 +131,21 @@
 @media(max-width:380px){
     .Servicesgroup{
         background-color: #DEE5EB;
-        display: flex;
-        justify-content: flex-start;
-        padding: 70px;
+        padding: 7px;
         align-items: center;
         overflow: hidden;
         .Services{
             padding: 0px;
             display: flex;
-            margin-right: 310px;
+            margin: 0px;
             flex-direction: column;
             .Servicestext{
-                display: flex;
+                display: block;
                 width: 100%;
-                white-space: nowrap; /* 강제로 한줄 처리 명령어 */
-                animation-name: Services;
-                animation-duration: 10s;
-                animation-iteration-count: infinite; /* infinite=무한반복 */
-                animation-timing-function: linear ;
                     img{
-                        margin-right: 150px;
-                        width: 630px;
+                        margin-top: 35px;
+                        width: 365px;
+                        height: 270px;
                     }
                     .Servicestextgroup{
                         display: flex;
@@ -198,7 +188,7 @@
                     margin-right: 200px;
                     width: 350px;
                     left: 4%;
-                    bottom: -20%;
+                    bottom: -197%;
                 }
                 .dashboardtxtgroup{
                     display: flex;
@@ -235,7 +225,7 @@
             position: absolute ;
             text-align: center;
             left: 0%;
-            top: 175%;
+            top: 355%;
             color: white;
             margin: 20px;
             b{

@@ -1,5 +1,5 @@
 import React from 'react'
-import Error from '../../comp/Error'
+import Error from '../../component/Error'
 function page() {
   return (
     <>

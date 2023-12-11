@@ -1,4 +1,4 @@
-import Detail from '../../comp/Detail'
+import Detail from '../../component/Detail'
 import React from 'react'
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Contactus from '../../comp/Contactus'
+import Contactus from '../../component/Contactus'
 function page() {
   return (
     <div>
