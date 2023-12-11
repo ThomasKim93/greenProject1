@@ -79,7 +79,7 @@ function Footer() {
                     <img src='../img/logo.png'></img>
                     <div className={footerSt.sns}>
                         <Link href={'/'}>
-                            <img src='../img/facebook.png'></img>
+                            <img src='../img/Facebook.png'></img>
                         </Link>
                         <Link href={'/'}>
                             <img src='../img/Twitter.png'></img>

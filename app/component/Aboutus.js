@@ -114,7 +114,7 @@ function Aboutus() {
                 <li><a href='#'><img src='../../../aboutus/Facebook.png' /></a></li>
                 <li><a href='#'><img src='../../../aboutus/Twitter.png' /></a></li>
                 <li><a href='#'><img src='../../../aboutus/Instagram.png' /></a></li>
-                <li><a href='#'><img src='../../../aboutus/Linkedin.png' /></a></li>
+                <li><a href='#'><img src='../../../aboutus/LinkedIn.png' /></a></li>
               </ul>
               <div className={style.for_mobile}></div>
               <div className={style.show}>
