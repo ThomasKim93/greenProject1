@@ -19,8 +19,8 @@ export default function Home() {
     {/* <Solution/>
     <Error/> */}
     {/* <Loading/> */}
-    <Login/>
-    {/* <Signup/> */}
+    <Login/> 
+    <Signup/>
     </>
   )
 }

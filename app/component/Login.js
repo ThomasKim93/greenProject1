@@ -4,22 +4,26 @@ import React, { useState } from 'react'
 import style from '../pages/login/login.module.scss';
 
 function Login() {
-
-
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-    
-        // 이메일과 비밀번호를 로컬 스토리지에 저장
-        localStorage.setItem('userEmail', email);
-        localStorage.setItem('userPassword', password);
-    
-        // 콘솔에 데이터 출력
-        console.log('Email:', email);
-        console.log('Password:', password);}
-        
+        const existingData = JSON.parse(localStorage.getItem('userData')) || [];
+
+        const newData = [{ email, password }];
+
+        localStorage.setItem('userData', JSON.stringify(newData));
+
+        console.log('All Data:', newData);
+
+        setEmail('');
+        setPassword('');
+
+        console.log('All Data:', newData);
+        console.log('Last Entry:', { email, password });  // 마지막으로 입력된 데이터만 출력
+    }
+
     return (
         <>
             <section className={style.login_section}>

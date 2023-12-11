@@ -11,12 +11,22 @@ function Signup() {
 
     const handleSubmit2 = (e) => {
         e.preventDefault();
-    
-        localStorage.setItem('userEmail', email);
-        localStorage.setItem('userPassword', password);
-    
-        console.log('Email:', email);
-        console.log('Password:', password);}
+        const existingData = JSON.parse(localStorage.getItem('userData')) || [];
+
+        const newData = [{ email, password }];
+
+
+        localStorage.setItem('userData', JSON.stringify(newData));
+
+
+        console.log('All Data:', newData);
+
+        setEmail('');
+        setPassword('');
+
+        console.log('All Data:', newData);
+        console.log('Last Entry:', { email, password });  // 마지막으로 입력된 데이터만 출력
+    }
 
 
     return (
