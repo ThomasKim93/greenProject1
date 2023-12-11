@@ -1253,6 +1253,9 @@
   background-color: #1C9AEA;
   color: white;
 }
+.main_main__tHXmq .main_contact__Hj_m5 .main_contacttitle__SEXFW .main_contactPost__U7ftJ .main_contactSubmit__3R_0J a {
+  color: white;
+}
 
 /* media390px */
 @media (max-width: 380px) {
@@ -1750,6 +1753,9 @@
   }
   .main_main__tHXmq .main_contact__Hj_m5 .main_contacttitle__SEXFW .main_contactPost__U7ftJ .main_contactSubmit__3R_0J {
     width: 100%;
+  }
+  .main_main__tHXmq .main_contact__Hj_m5 .main_contacttitle__SEXFW .main_contactPost__U7ftJ .main_contactSubmit__3R_0J a {
+    color: white;
   }
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************!*\

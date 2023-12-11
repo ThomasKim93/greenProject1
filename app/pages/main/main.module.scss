@@ -509,6 +509,7 @@
                     padding: 15px;
                     border-radius: 5px 0 0 5px;
                 }
+               
                 .contactSubmit{
                     font-size: 17px;
                     width: 20%;
@@ -517,6 +518,7 @@
                     border-radius: 0 5px 5px 0;
                     background-color: #1C9AEA;
                     color: white;
+                    a{color: white;}
                 }
             }
         }
@@ -1044,6 +1046,7 @@
                     }
                     .contactSubmit{
                         width: 100%;
+                        a{color: white;}
                     }
                 }
             }

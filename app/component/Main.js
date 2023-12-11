@@ -520,6 +520,10 @@ const handleSwiper = (swiperInstance) => {
                             <p className={mainSt.name}>Mary Smith</p>
                             <div className={mainSt.star}>
                                 <img src='../img/star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
                             </div>
                             </div>
                         </div>
@@ -534,6 +538,10 @@ const handleSwiper = (swiperInstance) => {
                             <p className={mainSt.name}>Mary Smith</p>
                             <div className={mainSt.star}>
                                 <img src='../img/star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
                             </div>
                             </div>
                         </div>
@@ -548,6 +556,8 @@ const handleSwiper = (swiperInstance) => {
                             <p className={mainSt.name}>Mary Smith</p>
                             <div className={mainSt.star}>
                                 <img src='../img/star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
                             </div>
                             </div>
                         </div>
@@ -562,6 +572,9 @@ const handleSwiper = (swiperInstance) => {
                             <p className={mainSt.name}>Mary Smith</p>
                             <div className={mainSt.star}>
                                 <img src='../img/star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
                             </div>
                             </div>
                         </div>
@@ -576,6 +589,9 @@ const handleSwiper = (swiperInstance) => {
                             <p className={mainSt.name}>Mary Smith</p>
                             <div className={mainSt.star}>
                                 <img src='../img/star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
                             </div>
                             </div>
                         </div>
@@ -590,6 +606,9 @@ const handleSwiper = (swiperInstance) => {
                             <p className={mainSt.name}>Mary Smith</p>
                             <div className={mainSt.star}>
                                 <img src='../img/star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
                             </div>
                             </div>
                         </div>
@@ -604,6 +623,9 @@ const handleSwiper = (swiperInstance) => {
                             <p className={mainSt.name}>Mary Smith</p>
                             <div className={mainSt.star}>
                                 <img src='../img/star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                <img src='../img/Star.png' className={mainSt.profilestar}></img>
                             </div>
                             </div>
                         </div>
