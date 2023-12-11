@@ -43,3 +43,27 @@
 
     }
 }
+
+@media (max-width:380px) {
+    .error_section{
+    
+        article{
+            flex-direction: column;
+            .error_img{
+                height: 60vh;
+            }
+            .error_contents{
+                span{
+                    font-size: 36px;
+                }
+                p{
+                    font-size: 14px;
+                    margin: 10px;
+                }
+                a{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import Footer from '../../comp/Footer'
+import Footer from '../../component/Footer'
 import React from 'react'
 
 function page() {

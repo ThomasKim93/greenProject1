@@ -3,17 +3,28 @@
     .logogroup{
         display: flex;
         justify-content: space-between;
-        .logo{
-            margin-bottom: 10px;
-            img{
-                margin-bottom: 15px;
+        .topbtngroup{
+            text-align: center;
+            
+            a{}
+            .footermediaup{
+                color: #9BD2F5;
+                display: none;
             }
-            .sns{
+            .logo{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
                 img{
-                    margin-right: 30px;
+                    margin: 0 35px 10px 0;
                 }
-            }
-        }  
+                .sns{
+                    img{
+                        margin-right: 30px;
+                    }
+                }
+            }  
+        }
         .footermenugroup{
             display: flex;
             justify-content: flex-end;
@@ -50,7 +61,94 @@
                     writing-mode: vertical-rl;
                     transform: rotateZ(180deg);
                 }
+                .footermediaup{
+                    display: none;
+                }
             }
         }
+        .footerfooteraccodian{
+            display: none;
+        }
     } 
+}
+@media(max-width:390px){
+    .footer{
+        margin-left: 20px;
+        .logogroup{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            .topbtngroup{
+                text-align: center;
+                
+                a{}
+                .footermediaup{
+                    display: block;
+                    color: #9BD2F5;
+                }
+                .logo{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: row;
+                    img{
+                        margin: 0 35px 10px 0;
+                    }
+                    .sns{
+                        img{
+                            margin-right: 30px;
+                        }
+                    }
+                }  
+            }
+            .footermenugroup{
+                display: none;
+                justify-content: flex-end;
+                .footermenu{
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 70px;
+                    b{
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        margin-bottom: 10px;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                .footertopLink{
+                    .footertop{
+                        display: none;
+                        .footerstraight{
+
+                        }
+                    }
+                    .footerup{
+                        display: none;
+                    }
+                    .footermediaup{
+                        display: flex;
+                    }
+                }
+            }
+            .footerfooteraccodian{
+                display: flex;
+                .footeraccodiangroup{
+                    .footeraccodianlist{
+                    }
+                    .footeraccodiantitle{
+                        font-weight: bold;
+                    }
+                    span{
+                        display: flex;
+                        
+                        a{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    
 }

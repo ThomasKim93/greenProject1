@@ -1,4 +1,4 @@
-import Aboutus from '../../comp/Aboutus'
+import Aboutus from '../../component/Aboutus'
 import React from 'react'
 
 function page() {
