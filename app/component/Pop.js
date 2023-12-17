@@ -22,11 +22,12 @@ const MenuOptions = ({ closeMenu }) => {
                 </div>
                 <div className={heraderSt.popmenu}>
                     <span className={heraderSt.home}onClick={() => handleMenuItemClick("/")}> HOME </span>
+                    <div className={heraderSt.line}></div>
                     {/* Products with Submenu */}
                     <div className={heraderSt.menuOptionsgroup}>
                     <span className={`${heraderSt.products} ${showProductsSubMenu && heraderSt.open}`} onClick={handleProductsSubMenuToggle}>
                             <p className={heraderSt.productsmain}>Products</p>
-                            
+                            <div className={heraderSt.line}></div>
                         </span>
                             {showProductsSubMenu && (
                             <div className={heraderSt.subMenu}>
@@ -45,8 +46,11 @@ const MenuOptions = ({ closeMenu }) => {
                 </div>
                 <div className={heraderSt.subMenu2}>
                     <span onClick={() => handleMenuItemClick("../../pages/aboutus")}> About Us </span>
+                    <div className={heraderSt.line}></div>
                     <span onClick={() => handleMenuItemClick("../../pages/blogs")}> Blogs </span>
+                    <div className={heraderSt.line}></div>
                     <span onClick={() => handleMenuItemClick("../../pages/Contact")}> Contact Us </span>
+                    <div className={heraderSt.line}></div>
                     <span onClick={() => handleMenuItemClick("../../pages/login")}> Log In </span>
                     <span className={heraderSt.subMenustyle} onClick={() => handleMenuItemClick("../../pages/signup")}> Sign Up </span>
                 </div>
