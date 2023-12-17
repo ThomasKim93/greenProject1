@@ -87,6 +87,7 @@ function Main() {
         }
     };
     const handleTouchMove = (e) => {
+        e.preventDefault();
         // 터치 이벤트에서는 e.touches 배열을 사용하여 터치의 위치를 가져옴
         handleMouseMove(e.touches[0]);
     };
@@ -314,7 +315,7 @@ function Main() {
             slidesPerView: 2,
         },
         500: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
         780: {
             slidesPerView: 3,
