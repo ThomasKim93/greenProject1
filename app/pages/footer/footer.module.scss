@@ -47,7 +47,7 @@
                 b {
                     margin-bottom: 10px;
                 }
-
+                
                 a {
                     margin-bottom: 10px;
                     text-decoration: none;
@@ -140,7 +140,10 @@
                     b {
                         margin-bottom: 10px;
                     }
-
+                    .line{
+                        border-bottom: 1px solid #9BD2F5;
+                            margin: 20px 0;
+                    }
                     a {
                         margin-bottom: 10px;
                         text-decoration: none;
@@ -180,20 +183,30 @@
                         font-size: 12px;
                         margin-bottom: 10px;
                         position: absolute;
-                        right: -2%;
+                        right: 0%;
                         top: 0;
                         transition: 0.5s;
                     }
 
-                    .footeraccodiantitle {
-                        font-weight: bold;
+                    .footeraccodiantitlegroup{
+                        position: relative;
+                        .footeraccodiantitle {
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                        .line {
+                            border-bottom: 1px solid #9BD2F5;
+                            margin:15px 0;
+                        }
                     }
-
-                    span {
-                        display: flex;
-
-                        a {
-                            margin-right: 20px;
+                    .footeraccodiantxt{
+                        margin: 15px 0;
+                        span {
+                            display: flex;
+                            a {
+                                margin-right: 35px;
+                                color: black;
+                            }
                         }
                     }
                 }
@@ -251,7 +264,10 @@
                     b {
                         margin-bottom: 10px;
                     }
-
+                    .line{
+                        border-bottom: 1px solid #9BD2F5;
+                            margin: 20px 0;
+                    }
                     a {
                         margin-bottom: 10px;
                         text-decoration: none;
@@ -278,34 +294,40 @@
 
             .footerfooteraccodian {
                 display: flex;
-
                 .footeraccodiangroup {
                     width: 95%;
-
                     .footeraccodianlist {
                         position: relative;
-                    }
-
-                    .footeraccodianlist::after {
-                        content: url('../../img/down.png');
-                        font-size: 12px;
-                        margin-bottom: 10px;
-                        position: absolute;
-                        right: -2%;
-                        top: 0;
-                        transition: 0.5s;
-                    }
-
-                    .footeraccodiantitle {
-                        font-weight: bold;
-                    }
-
-                    span {
-                        display: flex;
-
-                        a {
-                            margin-right: 20px;
-                            color: black;
+                        &.with-after::after {
+                                content: url('../../img/down.png');
+                                font-size: 12px;
+                                margin-bottom: 10px;
+                                position: absolute;
+                                right: -2%;
+                                top: 0;
+                                transition: 0.5s;
+                            }
+                        
+                        .footeraccodiantitlegroup{
+                            position: relative;
+                            .footeraccodiantitle {
+                                font-weight: bold;
+                                margin-bottom: 10px;
+                            }
+                            .line {
+                                border-bottom: 1px solid #9BD2F5;
+                                margin:15px 0;
+                            }
+                        }
+                        .footeraccodiantxt{
+                            margin: 15px 0;
+                            span {
+                                display: flex;
+                                a {
+                                    margin-right: 35px;
+                                    color: black;
+                                }
+                            }
                         }
                     }
                 }
@@ -362,7 +384,10 @@
                     b {
                         margin-bottom: 10px;
                     }
-
+                    .line{
+                        border-bottom: 1px solid #9BD2F5;
+                            margin: 20px 0;
+                    }
                     a {
                         margin-bottom: 10px;
                         text-decoration: none;
@@ -389,13 +414,11 @@
 
             .footerfooteraccodian {
                 display: flex;
-
                 .footeraccodiangroup {
                     width: 95%;
                     .footeraccodianlist {
                         position: relative;
-                        &.with-after {
-                            &::after {
+                        &.with-after::after {
                                 content: url('../../img/down.png');
                                 font-size: 12px;
                                 margin-bottom: 10px;
@@ -404,25 +427,26 @@
                                 top: 0;
                                 transition: 0.5s;
                             }
-                        }
-                        .line {
-                            border-bottom: 1px solid #9BD2F5;
-                            margin: 20px 0;
-                        }
-                        .footeraccodiantitle {
-                            font-weight: bold;
+                        
+                        .footeraccodiantitlegroup{
+                            position: relative;
+                            .footeraccodiantitle {
+                                font-weight: bold;
+                                margin-bottom: 10px;
+                            }
                             .line {
                                 border-bottom: 1px solid #9BD2F5;
-                                margin: 20px 0;
+                                margin:15px 0;
                             }
                         }
-                        
-                        span {
-                            display: flex;
-
-                            a {
-                                margin-right: 35px;
-                                color: black;
+                        .footeraccodiantxt{
+                            margin: 15px 0;
+                            span {
+                                display: flex;
+                                a {
+                                    margin-right: 35px;
+                                    color: black;
+                                }
                             }
                         }
                     }

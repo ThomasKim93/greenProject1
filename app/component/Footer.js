@@ -40,8 +40,8 @@ function Footer() {
             )
         },
         {
-            title1: 'Account',
-            text1: (
+            title: 'Account',
+            text: (
                 <span>
                     <Link href="../../pages/login"> Log in </Link>
                     <Link href="../../pages/signup"> Sign up </Link>
@@ -50,16 +50,16 @@ function Footer() {
             )
         },
         {
-            title2: 'Legal',
-            text2: (
+            title: 'Legal',
+            text: (
                 <span>
                     <Link href={'/'}> Privacy Policy </Link>
                 </span>
             )
         },
         {
-            title3: 'Other',
-            text3: (
+            title: 'Other',
+            text: (
                 <span>
                     <Link href="../../pages/blogs"> Blogs </Link>
                     <Link href="../../pages/Contact"> Contact Us </Link>
@@ -126,69 +126,22 @@ function Footer() {
 
                 {/* media */}
                 <div className={footerSt.footerfooteraccodian}>
-                    <ul className={footerSt.footeraccodiangroup}>
+                    <div className={footerSt.footeraccodiangroup}>
                         {footerItems.map((item, index) => (
-                            <li
+                            <div
                             key={index}
                             className={`${footerSt.footeraccodianlist} ${activeFooter === index ? `${footerSt.active} with-after` : ''}`}
-                            onClick={() => handleFooterClick(index)}
-                            >
-                                <p className={footerSt.footeraccodiantitle}>{item.title}</p>
-                                <div className={footerSt.lined}></div>
+                            onClick={() => handleFooterClick(index)}>
+                                <div className={footerSt.footeraccodiantitlegroup}>
+                                    <p className={`${footerSt.footeraccodiantitle}  ${activeFooter === index ? footerSt.withUnderline : ''}`}>{item.title}</p>
+                                    <div className={footerSt.line}></div>
+                                </div>
                                 {activeFooter === index && (
-                                    <>
-                                        <p className={footerSt.footeraccodiantxt}>{item.text}</p>
-                                    </>
+                                    <p className={footerSt.footeraccodiantxt}>{item.text}</p>
                                 )}
-                            </li>
+                            </div>
                         ))}
-                        <div className={footerSt.line}></div>
-                        {footerItems.map((item, index) => (
-                            <li
-                                key={index}
-                                className={`${footerSt.footeraccodianlist} ${activeFooter === index ? footerSt.active : ''}`}
-                                onClick={() => handleFooterClick(index)}
-                            >
-                                <p className={footerSt.footeraccodiantitle}>{item.title1}</p>
-                                {activeFooter === index && (
-                                    <>
-                                        <p className={footerSt.footeraccodiantxt}>{item.text1}</p>
-                                    </>
-                                )}
-                            </li>
-                        ))}
-                        <div className={footerSt.line}></div>
-                        {footerItems.map((item, index) => (
-                            <li
-                                key={index}
-                                className={`${footerSt.footeraccodianlist} ${activeFooter === index ? footerSt.active : ''}`}
-                                onClick={() => handleFooterClick(index)}
-                            >
-                                <p className={footerSt.footeraccodiantitle}>{item.title2}</p>
-                                {activeFooter === index && (
-                                    <>
-                                        <p className={footerSt.footeraccodiantxt}>{item.text2}</p>
-                                    </>
-                                )}
-                            </li>
-                        ))}
-                        <div className={footerSt.line}></div>
-                        {footerItems.map((item, index) => (
-                            <li
-                                key={index}
-                                className={`${footerSt.footeraccodianlist} ${activeFooter === index ? footerSt.active : ''}`}
-                                onClick={() => handleFooterClick(index)}
-                            >
-                                <p className={footerSt.footeraccodiantitle}>{item.title3}</p>
-                                {activeFooter === index && (
-                                    <>
-                                        <p className={footerSt.footeraccodiantxt}>{item.text3}</p>
-                                    </>
-                                )}
-                            </li>
-                        ))}
-                        <div className={footerSt.line}></div>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>

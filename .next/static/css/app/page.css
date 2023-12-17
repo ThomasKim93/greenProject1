@@ -111,6 +111,10 @@
   .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 b {
     margin-bottom: 10px;
   }
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 .footer_line__xq5vB {
+    border-bottom: 1px solid #9BD2F5;
+    margin: 20px 0;
+  }
   .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 a {
     margin-bottom: 10px;
     text-decoration: none;
@@ -140,18 +144,30 @@
     font-size: 12px;
     margin-bottom: 10px;
     position: absolute;
-    right: -2%;
+    right: 0%;
     top: 0;
     transition: 0.5s;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodiantitle__yW9QA {
-    font-weight: bold;
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodiantitlegroup__43YdG {
+    position: relative;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva span {
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodiantitlegroup__43YdG .footer_footeraccodiantitle__yW9QA {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodiantitlegroup__43YdG .footer_line__xq5vB {
+    border-bottom: 1px solid #9BD2F5;
+    margin: 15px 0;
+  }
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodiantxt__CShsI {
+    margin: 15px 0;
+  }
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodiantxt__CShsI span {
     display: flex;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva span a {
-    margin-right: 20px;
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodiantxt__CShsI span a {
+    margin-right: 35px;
+    color: black;
   }
 }
 @media (max-width: 780px) {
@@ -195,6 +211,10 @@
   .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 b {
     margin-bottom: 10px;
   }
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 .footer_line__xq5vB {
+    border-bottom: 1px solid #9BD2F5;
+    margin: 20px 0;
+  }
   .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 a {
     margin-bottom: 10px;
     text-decoration: none;
@@ -218,7 +238,7 @@
   .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw {
     position: relative;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw::after {
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw.footer_with-after__xFuFN::after {
     content: url(/_next/static/media/down.ee302880.png);
     font-size: 12px;
     margin-bottom: 10px;
@@ -227,14 +247,25 @@
     top: 0;
     transition: 0.5s;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodiantitle__yW9QA {
-    font-weight: bold;
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantitlegroup__43YdG {
+    position: relative;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva span {
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantitlegroup__43YdG .footer_footeraccodiantitle__yW9QA {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantitlegroup__43YdG .footer_line__xq5vB {
+    border-bottom: 1px solid #9BD2F5;
+    margin: 15px 0;
+  }
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantxt__CShsI {
+    margin: 15px 0;
+  }
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantxt__CShsI span {
     display: flex;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva span a {
-    margin-right: 20px;
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantxt__CShsI span a {
+    margin-right: 35px;
     color: black;
   }
 }
@@ -275,6 +306,10 @@
   .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 b {
     margin-bottom: 10px;
   }
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 .footer_line__xq5vB {
+    border-bottom: 1px solid #9BD2F5;
+    margin: 20px 0;
+  }
   .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footermenugroup__8Gmyq .footer_footermenu__lyss0 a {
     margin-bottom: 10px;
     text-decoration: none;
@@ -307,21 +342,24 @@
     top: 0;
     transition: 0.5s;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_line__xq5vB {
-    border-bottom: 1px solid #9BD2F5;
-    margin: 20px 0;
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantitlegroup__43YdG {
+    position: relative;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantitle__yW9QA {
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantitlegroup__43YdG .footer_footeraccodiantitle__yW9QA {
     font-weight: bold;
+    margin-bottom: 10px;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantitle__yW9QA .footer_line__xq5vB {
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantitlegroup__43YdG .footer_line__xq5vB {
     border-bottom: 1px solid #9BD2F5;
-    margin: 20px 0;
+    margin: 15px 0;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw span {
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantxt__CShsI {
+    margin: 15px 0;
+  }
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantxt__CShsI span {
     display: flex;
   }
-  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw span a {
+  .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva .footer_footeraccodianlist__TSsSw .footer_footeraccodiantxt__CShsI span a {
     margin-right: 35px;
     color: black;
   }
