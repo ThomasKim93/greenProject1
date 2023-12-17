@@ -44,7 +44,7 @@ function Main() {
     const [sliderValue, setSliderValue] = useState(0);
     const [isDragging, setIsDragging] = useState(false);
 
-    const sliderRef = useRef(null);  // slider's ref
+    const sliderRef = useRef(null);
     const [savings, setSavings] = useState(100);
     const [spendings, setSpendings] = useState(100);
 
@@ -55,20 +55,28 @@ function Main() {
     const handleMouseMove = (e) => {
         if (isDragging) {
             const sliderRect = sliderRef.current.getBoundingClientRect();
-            const offsetX = e.clientX - sliderRect.left;
+            let offsetX;
+    
+            if (e.clientX) {
+                offsetX = e.clientX - sliderRect.left;
+            } else if (e.touches && e.touches[0].clientX) {
+                offsetX = e.touches[0].clientX - sliderRect.left;
+            }
+    
             const newPercentage = Math.max(0, Math.min(100, Math.round(offsetX / sliderRect.width * 100)));
     
             if (newPercentage !== sliderValue) {
                 requestAnimationFrame(() => {
                     setSliderValue(newPercentage);
-    
-                    // 드래그 값에 따라 배경 색 업데이트
                     const newWidth = `${newPercentage}%`;
                     setThumbWidth(newWidth);
     
-                    // 나머지 로직은 그대로 유지
                     const maxSavings = 1000;
                     const newSavings = Math.round((newPercentage / 100) * maxSavings);
+    
+                    // Log 추가
+                    console.log('New Savings:', newSavings);
+    
                     setSavings(newSavings);
     
                     const maxSpendings = 2000;
@@ -78,19 +86,26 @@ function Main() {
             }
         }
     };
-
+    const handleTouchMove = (e) => {
+        // 터치 이벤트에서는 e.touches 배열을 사용하여 터치의 위치를 가져옴
+        handleMouseMove(e.touches[0]);
+    };
     const handleMouseUp = () => {
         setIsDragging(false);
     };
+
     useEffect(() => {
         if (typeof window !== 'undefined') {
-            // document 객체를 사용하는 코드
             window.addEventListener('mousemove', handleMouseMove);
             window.addEventListener('mouseup', handleMouseUp);
-    
+            window.addEventListener('touchmove', handleMouseMove);
+            window.addEventListener('touchend', handleMouseUp);
+
             return () => {
                 window.removeEventListener('mousemove', handleMouseMove);
                 window.removeEventListener('mouseup', handleMouseUp);
+                window.removeEventListener('touchmove', handleMouseMove);
+                window.removeEventListener('touchend', handleMouseUp);
             };
         }
     }, [isDragging]);
@@ -280,40 +295,39 @@ function Main() {
     ];
     const [swiper, setSwiper] = useState(null);
 
-const handleMouseEnter = () => {
-    if (swiper && swiper.autoplay) {
-        swiper.autoplay.stop();
-    }
-};
+    const handleMouseEnter = () => {
+        if (swiper && swiper.autoplay) {
+            swiper.autoplay.stop();
+        }
+    };
 
-const handleMouseLeave = () => {
-    if (swiper && swiper.autoplay) {
-        swiper.autoplay.start();
-    }
-};
-const handleSwiper = (swiperInstance) => {
-    setSwiper(swiperInstance);
-};
+    const handleMouseLeave = () => {
+        if (swiper && swiper.autoplay) {
+            swiper.autoplay.start();
+        }
+    };
+    const handleSwiper = (swiperInstance) => {
+        setSwiper(swiperInstance);
+    };
     const breakpoints = {
         390: {
-        slidesPerView: 1,
+            slidesPerView: 2,
         },
         500: {
-        slidesPerView: 2,
+            slidesPerView: 2,
         },
-        
         780: {
-        slidesPerView: 3,
+            slidesPerView: 3,
         },
         1200: {
-        slidesPerView: 4,
+            slidesPerView: 4,
         },
         1900: {
-        slidesPerView: 6,
+            slidesPerView: 6,
         },
     };
-    
-        
+
+
 
 
     const [email, setEmail] = useState(''); // 이메일 상태 추가
@@ -650,6 +664,8 @@ const handleSwiper = (swiperInstance) => {
                             onMouseDown={handleMouseDown}
                             onMouseMove={handleMouseMove}
                             onMouseUp={handleMouseUp}
+                            onTouchMove={handleTouchMove} 
+                            onTouchEnd={handleMouseUp}
                             ref={sliderRef}
                             onChange={(e) => setSliderValue(e.target.value)}
                         />
@@ -657,7 +673,7 @@ const handleSwiper = (swiperInstance) => {
                     <div className={mainSt.Platformsavingtxt}>
                         <div className={mainSt.Platformsavingtxtgroup}>
                             <p className={mainSt.Platformsaving}>Savings</p>
-                            <p className={mainSt.Platformsaving}>$ {savings}</p>
+                            <p className={mainSt.Platformsaving}>${savings}</p>
                         </div>
                         <Link href='/' className={mainSt.Platformbtn}> Explore More </Link>
                     </div>
@@ -675,11 +691,11 @@ const handleSwiper = (swiperInstance) => {
                 <div className={mainSt.dashboardgroup}>
                     <div className={mainSt.dashboardimg}>
                         {dashboardItems.map((item, index) => (
-                                <div key={index} className={mainSt.dashboardactive}>
-                                    {activeDashboardItem === index && (
-                                        <img src={item.imageURL} alt={`Dashboard ${index + 1}`} />
-                                    )}
-                                </div>
+                            <div key={index} className={mainSt.dashboardactive}>
+                                {activeDashboardItem === index && (
+                                    <img src={item.imageURL} alt={`Dashboard ${index + 1}`} />
+                                )}
+                            </div>
                         ))}
                     </div>
                     <div className={mainSt.dashboardgroupimg}>
@@ -791,11 +807,11 @@ const handleSwiper = (swiperInstance) => {
                             hidden: true,
                         }}
                         breakpoints={breakpoints}
-                        autoplay={{  
-                            delay: 1000,  
+                        autoplay={{
+                            delay: 1000,
                             disableOnInteraction: false,  // 사용자와의 상호 작용 후에도 계속 진행
                         }}
-                        effect="fade"  
+                        effect="fade"
                         modules={[Mousewheel]}
                         className="mySwiper"
                     >
