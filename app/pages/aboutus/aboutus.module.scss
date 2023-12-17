@@ -295,7 +295,7 @@
             }
             .contactPost{
                 .contactMail{
-                    width: 95%;
+                    width:50%;
                     font-size: 17px;
                     border: 0px;
                     padding: 15px;
@@ -303,12 +303,13 @@
                 }
                 .contactSubmit{
                     font-size: 17px;
-                    width: 95%;
+                    width: 20%;
                     border: 0px;
                     padding: 15px;
                     border-radius: 0 5px 5px 0;
                     background-color: #1C9AEA;
                     color: white;
+                    a{color: white;}
                 }
             }
         }
@@ -509,6 +510,8 @@
                     padding-top: 0px;
                     text-align: center;
                     color: white;
+                    left: 9%;
+                    top: 50%;
                     b{
                         font-size: 32px;
                     }
@@ -518,16 +521,17 @@
                     }
                     .contactPost{
                         .contactMail{
-                            width: 40%;
+                            width: 90%;
                             font-size: 17px;
                             border: 0px;
                             padding: 15px;
                             border-radius: 5px 0 0 5px;
+                            margin-bottom: 20px;
                         }
                        
                         .contactSubmit{
                             font-size: 17px;
-                            width: 20%;
+                            width: 93%;
                             border: 0px;
                             padding: 15px;
                             border-radius: 0 5px 5px 0;
