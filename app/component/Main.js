@@ -4,10 +4,10 @@ import React, { useEffect, useRef, useState } from 'react'
 import mainSt from "../pages/main/main.module.scss";
 import Link from 'next/link';
 import '../pages/style.css';
-import { Swiper, SwiperSlide, Mousewheel } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+import { Mousewheel } from 'swiper/modules';
 
 function Main() {
 
@@ -278,7 +278,40 @@ function Main() {
             star: '../img/Star.png'
         },
     ];
-    
+    const [swiper, setSwiper] = useState(null);
+
+const handleMouseEnter = () => {
+    if (swiper && swiper.autoplay) {
+        swiper.autoplay.stop();
+    }
+};
+
+const handleMouseLeave = () => {
+    if (swiper && swiper.autoplay) {
+        swiper.autoplay.start();
+    }
+};
+const handleSwiper = (swiperInstance) => {
+    setSwiper(swiperInstance);
+};
+    const breakpoints = {
+        390: {
+        slidesPerView: 1,
+        },
+        500: {
+        slidesPerView: 2,
+        },
+        
+        780: {
+        slidesPerView: 3,
+        },
+        1200: {
+        slidesPerView: 4,
+        },
+        1900: {
+        slidesPerView: 6,
+        },
+    };
     
         
 
@@ -739,177 +772,74 @@ function Main() {
                 </div>
             </div>
             {/*Customers  */}
-            <div className={mainSt.Customers} >
-                <div className={mainSt.Customersgroup}>
-                    <div className={mainSt.Customerswrapper}>
-                        <div className={mainSt.CustomersReview}>
-                                <h2>"</h2>
-                                <p className={mainSt.CustomerReviewtxt}>I can't believe how easy it was to find and compare different software solutions. And the savings calculator helped us make the best decision for our budget.</p>
-                        </div>
-                            <div className={mainSt.profilegroup}>
-                                <div className={mainSt.slidepicContainer}>
-                                    <img src={'../img/profile.png'} className={mainSt.slideprofile}></img>
-                                </div>
-                                <div className={mainSt.review}>
-                                    <p className={mainSt.name}>Marry Smith</p>
-                                    <div className={mainSt.star}>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div className={mainSt.Customerswrapper}>
-                        <div className={mainSt.CustomersReview}>
-                                <h2>"</h2>
-                                <p className={mainSt.CustomerReviewtxt}>I can't believe how easy it was to find and compare different software solutions. And the savings calculator helped us make the best decision for our budget.</p>
-                        </div>
-                            <div className={mainSt.profilegroup}>
-                                <div className={mainSt.slidepicContainer}>
-                                    <img src={'../img/profile.png'} className={mainSt.slideprofile}></img>
-                                </div>
-                                <div className={mainSt.review}>
-                                    <p className={mainSt.name}>Marry Smith</p>
-                                    <div className={mainSt.star}>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div className={mainSt.Customerswrapper}>
-                        <div className={mainSt.CustomersReview}>
-                                <h2>"</h2>
-                                <p className={mainSt.CustomerReviewtxt}>I can't believe how easy it was to find and compare different software solutions. And the savings calculator helped us make the best decision for our budget.</p>
-                        </div>
-                            <div className={mainSt.profilegroup}>
-                                <div className={mainSt.slidepicContainer}>
-                                    <img src={'../img/profile.png'} className={mainSt.slideprofile}></img>
-                                </div>
-                                <div className={mainSt.review}>
-                                    <p className={mainSt.name}>Marry Smith</p>
-                                    <div className={mainSt.star}>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div className={mainSt.Customerswrapper}>
-                        <div className={mainSt.CustomersReview}>
-                                <h2>"</h2>
-                                <p className={mainSt.CustomerReviewtxt}>I can't believe how easy it was to find and compare different software solutions. And the savings calculator helped us make the best decision for our budget.</p>
-                        </div>
-                            <div className={mainSt.profilegroup}>
-                                <div className={mainSt.slidepicContainer}>
-                                    <img src={'../img/profile.png'} className={mainSt.slideprofile}></img>
-                                </div>
-                                <div className={mainSt.review}>
-                                    <p className={mainSt.name}>Marry Smith</p>
-                                    <div className={mainSt.star}>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div className={mainSt.Customerswrapper}>
-                        <div className={mainSt.CustomersReview}>
-                                <h2>"</h2>
-                                <p className={mainSt.CustomerReviewtxt}>I can't believe how easy it was to find and compare different software solutions. And the savings calculator helped us make the best decision for our budget.</p>
-                        </div>
-                            <div className={mainSt.profilegroup}>
-                                <div className={mainSt.slidepicContainer}>
-                                    <img src={'../img/profile.png'} className={mainSt.slideprofile}></img>
-                                </div>
-                                <div className={mainSt.review}>
-                                    <p className={mainSt.name}>Marry Smith</p>
-                                    <div className={mainSt.star}>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div className={mainSt.Customerswrapper}>
-                        <div className={mainSt.CustomersReview}>
-                                <h2>"</h2>
-                                <p className={mainSt.CustomerReviewtxt}>I can't believe how easy it was to find and compare different software solutions. And the savings calculator helped us make the best decision for our budget.</p>
-                        </div>
-                            <div className={mainSt.profilegroup}>
-                                <div className={mainSt.slidepicContainer}>
-                                    <img src={'../img/profile.png'} className={mainSt.slideprofile}></img>
-                                </div>
-                                <div className={mainSt.review}>
-                                    <p className={mainSt.name}>Marry Smith</p>
-                                    <div className={mainSt.star}>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div className={mainSt.Customerswrapper}>
-                        <div className={mainSt.CustomersReview}>
-                                <h2>"</h2>
-                                <p className={mainSt.CustomerReviewtxt}>I can't believe how easy it was to find and compare different software solutions. And the savings calculator helped us make the best decision for our budget.</p>
-                        </div>
-                            <div className={mainSt.profilegroup}>
-                                <div className={mainSt.slidepicContainer}>
-                                    <img src={'../img/profile.png'} className={mainSt.slideprofile}></img>
-                                </div>
-                                <div className={mainSt.review}>
-                                    <p className={mainSt.name}>Marry Smith</p>
-                                    <div className={mainSt.star}>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div className={mainSt.Customerswrapper}>
-                        <div className={mainSt.CustomersReview}>
-                                <h2>"</h2>
-                                <p className={mainSt.CustomerReviewtxt}>I can't believe how easy it was to find and compare different software solutions. And the savings calculator helped us make the best decision for our budget.</p>
-                        </div>
-                            <div className={mainSt.profilegroup}>
-                                <div className={mainSt.slidepicContainer}>
-                                    <img src={'../img/profile.png'} className={mainSt.slideprofile}></img>
-                                </div>
-                                <div className={mainSt.review}>
-                                    <p className={mainSt.name}>Marry Smith</p>
-                                    <div className={mainSt.star}>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                        <img src='../img/Star.png' className={mainSt.profilestar}></img>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
+            <div className={mainSt.Customers}>
+
+
+                <div className={mainSt.Customerstitle}>
+                    <h3>What Our Customers Say</h3>
                 </div>
+
+                <div className={mainSt.Customerslist}>
+
+                    <Swiper
+                        direction={'horizontal'}
+                        slidesPerView={1}
+                        loop={true}
+                        spaceBetween={30}
+                        mousewheel={true}
+                        pagination={{
+                            hidden: true,
+                        }}
+                        breakpoints={breakpoints}
+                        autoplay={{  
+                            delay: 1000,  
+                            disableOnInteraction: false,  // 사용자와의 상호 작용 후에도 계속 진행
+                        }}
+                        effect="fade"  
+                        modules={[Mousewheel]}
+                        className="mySwiper"
+                    >
+                        {skillItem.map((card, id) => (
+                            <SwiperSlide
+                                key={id}
+                                className={mainSt.CustomersBox}
+                            >
+                                <div className={mainSt.CustomersReview}>
+                                    <h2>"</h2>
+                                    <p>
+                                        {card.review}
+                                    </p>
+                                </div>
+
+                                <div className={mainSt.profilegroup}>
+
+                                    <div className={mainSt.slidepicContainer}>
+                                        <img src={card.profilepic} className={mainSt.slideprofile}></img>
+
+                                    </div>
+
+                                    <div className={mainSt.review}>
+                                        <p className={mainSt.name}>{card.name}</p>
+                                        <div className={mainSt.star}>
+                                            <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                            <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                            <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                            <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                            <img src='../img/Star.png' className={mainSt.profilestar}></img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+
+                    </Swiper>
+
+
+                </div>
+
+
+
+
             </div>
             {/* contact */}
             <div className={mainSt.contact}>

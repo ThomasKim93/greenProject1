@@ -174,6 +174,7 @@
     display: flex;
     align-items: flex-start;
     flex-direction: row;
+    margin: 20px 15px;
   }
   .footer_footer__oBz2j .footer_logogroup__53FSy .footer_topbtngroup__Uwzk_ .footer_logo__vhVIH img {
     margin: 10px 35px 10px 0;
@@ -1752,46 +1753,53 @@ button.swiper-pagination-bullet {
 .main_main__tHXmq .main_Customers__lRbvF {
   background-color: #C7D4DD;
   width: 100%;
-  min-height: 50vh;
+  height: 90vh;
 }
-.main_main__tHXmq .main_Customers__lRbvF .main_Customersgroup__9p64k {
-  display: flex;
-  width: 175%;
+.main_main__tHXmq .main_Customers__lRbvF .main_Customerstitle__Wy5s2 {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 20px;
 }
-.main_main__tHXmq .main_Customers__lRbvF .main_Customersgroup__9p64k .main_Customerswrapper__u6m7x {
-  border-radius: 10px;
-  background: white;
+.main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ {
+  margin: 0 auto;
+  width: 98%;
+}
+.main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ .main_CustomersBox__FKbeE {
   padding: 20px;
-  margin: 100px 30px;
+  background-color: white;
+  border-radius: 10px;
+  height: 50vh;
+  position: relative;
 }
-.main_main__tHXmq .main_Customers__lRbvF .main_Customersgroup__9p64k .main_Customerswrapper__u6m7x h2 {
-  margin: 0;
-}
-.main_main__tHXmq .main_Customers__lRbvF .main_Customersgroup__9p64k .main_Customerswrapper__u6m7x .main_CustomerReviewtxt__ex_Kv {
-  margin-top: 0;
-}
-.main_main__tHXmq .main_Customers__lRbvF .main_Customersgroup__9p64k .main_Customerswrapper__u6m7x .main_CustomersReview__7Y1Wb h2 {
+.main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ .main_CustomersBox__FKbeE .main_CustomersReview__7Y1Wb h2 {
+  left: 10px;
+  top: 15px;
+  position: absolute;
   margin: 0 auto;
 }
-.main_main__tHXmq .main_Customers__lRbvF .main_Customersgroup__9p64k .main_Customerswrapper__u6m7x .main_profilegroup__uRnWi {
+.main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ .main_CustomersBox__FKbeE .main_profilegroup__uRnWi {
   display: flex;
   width: 100%;
   height: 20vh;
-  gap: 0px;
+  gap: 15px;
   justify-content: flex-start;
   align-items: center;
 }
-.main_main__tHXmq .main_Customers__lRbvF .main_Customersgroup__9p64k .main_Customerswrapper__u6m7x .main_profilegroup__uRnWi .main_slidepicContainer__C8jVG {
+.main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ .main_CustomersBox__FKbeE .main_profilegroup__uRnWi .main_slidepicContainer__C8jVG {
   width: 25%;
 }
-.main_main__tHXmq .main_Customers__lRbvF .main_Customersgroup__9p64k .main_Customerswrapper__u6m7x .main_profilegroup__uRnWi .main_slidepicContainer__C8jVG .main_slideprofile__xvuu2 {
-  width: 80%;
+.main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ .main_CustomersBox__FKbeE .main_profilegroup__uRnWi .main_slidepicContainer__C8jVG .main_slideprofile__xvuu2 {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.main_main__tHXmq .main_Customers__lRbvF .main_Customersgroup__9p64k .main_Customerswrapper__u6m7x .main_review__M0bUP .main_name__k2mlC {
-  margin: 10px 0;
+.main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ .main_CustomersBox__FKbeE .main_profilegroup__uRnWi .main_review__M0bUP .main_name__k2mlC {
+  margin: 0;
 }
+.main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ::-webkit-scrollbar {
+  display: none;
+}
+
 .main_contact__Hj_m5 {
   width: 100%;
   height: 80vh;
@@ -3376,17 +3384,20 @@ button.swiper-pagination-bullet {
     height: 90vh;
   }
   .main_main__tHXmq .main_Customers__lRbvF .main_Customerstitle__Wy5s2 {
-    font-size: 24px;
+    font-size: 32px;
     text-align: center;
-    padding-top: 0px;
+    padding-top: 20px;
   }
   .main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ {
     margin: 0 auto;
-    width: 100%;
+    width: 98%;
   }
   .main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ .main_CustomersBox__FKbeE {
-    width: 65%;
-    margin: 50px 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    height: 50vh;
+    position: relative;
   }
   .main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ .main_CustomersBox__FKbeE .main_CustomersReview__7Y1Wb h2 {
     left: 10px;
@@ -3409,9 +3420,6 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ .main_CustomersBox__FKbeE .main_profilegroup__uRnWi .main_review__M0bUP {
-    padding: 0 45px 0 0;
   }
   .main_main__tHXmq .main_Customers__lRbvF .main_Customerslist__sxzrJ .main_CustomersBox__FKbeE .main_profilegroup__uRnWi .main_review__M0bUP .main_name__k2mlC {
     margin: 0;

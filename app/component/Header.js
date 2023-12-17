@@ -22,7 +22,7 @@ function Header() {
     <div className={heraderSt.header}>
       
       <div className={heraderSt.logo}>
-        <img src="/img/logo.png" className={heraderSt.img}></img>
+        <img src="/img/logo.svg" className={heraderSt.img}></img>
       </div>
 
       {/* 일반 메뉴 */}
