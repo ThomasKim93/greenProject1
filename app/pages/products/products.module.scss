@@ -1,78 +1,103 @@
 .Servicesgroup{
-    background-color: #DEE5EB;
-    padding: 70px;
+    
+    
+    width: 100%;
     .Services{
-        padding: 100px;
-        display: flex;
-        margin-right: 310px;
+        background-color: #DEE5EB;
+        width: 100%;
+        height: 50vh;
         flex-direction: column;
+        
         .Servicestext{
             display: flex;
+            justify-content: center;
+            height: 100%;
+            align-items: center;
             width: 100%;
-            /* white-space: nowrap; 
-            animation-name: Services;
-            animation-duration: 10s;
-            animation-iteration-count: infinite; 
-            animation-timing-function: linear ; */
+            gap: 50px;
+            .Servicesimg{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 img{
-                    margin-right: 150px;
-                    width: 630px;
+                    margin:0 auto;
+                    width: 30vw;
+                
+                    
                 }
-                .Servicestextgroup{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    h3{
-                        font-size: 32px;
-                        margin-bottom: 10px;
-                    }
-                    .Servicestxt{
-                        font-size: 17px;
-                    }       
+            }
+            .Servicestextgroup{
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3{
+                    font-size: 32px;
+                    margin-bottom: 10px;
                 }
+                .Servicestxt{
+                    font-size: 17px;
+                }       
+            }
         }
-       /*  @keyframes Services{ 
-            0%{transform: translateX(0%);}
-            100%{transform: translateX(-100%);}
-        } */
+       
     }
 }
 .dashboardmain{
+    width: 100%;
+    height: 80vh;
     background-color:#225378 ;
+    
     .dashboardgroup{
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap:20px;
+        align-items: center;
         color: white;
-            align-items: center;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row-reverse;
+        margin-right: 20px;
+        margin-left: 20px;
+
+        .dashboardimg{
+            width:50%;
+            
+            .dashboardactive{
+                
+                margin: 0 auto;
+                width:80%;
+                height: 100%;
+                   img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                
+            }
+        }
+        
+       
+        .dashboardgroupimg{
+            width:50%;
+            
             .spantxt{
                 margin-bottom: 20px;
             }
-        .dashboardgroupimg{
-            padding: 100px;
-                display: flex;
-                margin: 2px 170px 150px;
-                flex-direction: column;
-            img{
-                position: absolute;
-                margin-right: 200px;
-                width: 610px;
-                left: 10%;
-                bottom: -177%;
-            }
             .dashboardtxtgroup{
                 display: flex;
-                justify-content: flex-end;
-                flex-direction: column-reverse;
+                flex-direction: column !important;
+            
+               
                 &:active{
                     
                 }
+                
                 .dashboardflex{
                     list-style:circle;
                     .dashboardtxtmain{
                         font-size: 28px;
-                        text-align: left;
                     }
                     .dashboardtxt{
                     }
@@ -84,127 +109,186 @@
             }
         }
     }
+    
+
+
+
 }
 .contact{
     width: 100%;
-    margin-bottom: 50px;   
-    .contactimg{
-        color: rgba(0, 0, 0, 0.2);
-        display: inline-block;
-        width: 100%; 
-    }   
-    .contacttitle{
-        position: absolute ;
-        text-align: center;
-        left: 25%;
-        top: 355%;
-        color: white;
-        b{
-            font-size: 32px;
-        }
-        .contacttxt{
-            font-size: 17px;
-            margin-bottom:30px;
-        }
-        .contactPost{
-            .contactMail{
-                width: 40%;
-                font-size: 17px;
-                border: 0px;
-                padding: 15px;
-                border-radius: 5px 0 0 5px;
+    height: 80vh;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-image: url('../../../public/img/contact.png');   
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* 원하는 배경 색상 및 투명도 설정 */
+        z-index: 1; /* 배경 이미지 위에 위치하도록 설정 */
+      }
+    .contactContainer{
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        .contacttitle{
+            padding-top: 200px;
+            text-align: center;
+            color: white;
+            b{
+                font-size: 32px;
             }
-            .contactSubmit{
+            .contacttxt{
                 font-size: 17px;
-                width: 20%;
-                border: 0px;
-                padding: 15px;
-                border-radius: 0 5px 5px 0;
-                background-color: #1C9AEA;
-                color: white;
+                margin-bottom:30px;
+            }
+            .contactPost{
+                .contactMail{
+                    width: 40%;
+                    font-size: 17px;
+                    border: 0px;
+                    padding: 15px;
+                    border-radius: 5px 0 0 5px;
+                }
+               
+                .contactSubmit{
+                    font-size: 17px;
+                    width: 20%;
+                    border: 0px;
+                    padding: 15px;
+                    border-radius: 0 5px 5px 0;
+                    background-color: #1C9AEA;
+                    color: white;
+                    a{color: white;}
+                }
             }
         }
     }
+
 }
 
-
-@media(max-width:380px){
-    .Servicesgroup{
-        background-color: #DEE5EB;
-        padding: 7px;
-        align-items: center;
-        overflow: hidden;
-        .Services{
-            padding: 0px;
+@media (max-width: 780px) {
+    .Servicesgroup {
+        width:100%;
+        .Services {
+            height: 80vh;
+            padding-bottom: 50px;
             display: flex;
-            margin: 0px;
-            flex-direction: column;
+            justify-content: center;
+            text-align: center;
             .Servicestext{
-                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                align-items: center;
                 width: 100%;
+                gap: 0px;
+                .Servicesimg{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                   
+                    align-items: center;
+                    justify-content: center;
                     img{
-                        margin-top: 35px;
-                        width: 365px;
-                        height: 270px;
+                        margin:0 auto;
+                        width: 60vw;
+                    
+                        
                     }
-                    .Servicestextgroup{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        h3{
-                            font-size: 32px;
-                            margin-bottom: 10px;
-                        }
-                        .Servicestxt{
-                            font-size: 17px;
-                        }       
+                }
+                .Servicestextgroup{
+                    width:100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h3{
+                        font-size: 32px;
+                        margin-bottom: 10px;
                     }
-            }
-            @keyframes Services{ /* 애니메이션은 @keyframes랑 묶음 */ 
-                0%{transform: translateX(0%);}
-                100%{transform: translateX(-100%);}
+                    .Servicestxt{
+                        font-size: 17px;
+                    }       
+                }
             }
         }
     }
     .dashboardmain{
+        width: 100%;
+        height:100vh;
         background-color:#225378 ;
+        
         .dashboardgroup{
-            color: white;
-            align-items: center;
-            overflow: hidden;
+            height: 80vh;
             display: flex;
-            justify-content: space-between;
-            flex-direction: row-reverse;
-            .spantxt{
-                margin-bottom: 20px;
+            margin: 0 auto;
+            flex-direction: column;
+            
+            align-items: center;
+        
+            
+    
+            .dashboardimg{
+               height: 100%;
+               width:100%;
+               position: relative;
+               margin-top: 100px;
+               left:0;
+               right:0;
+              
+                .dashboardactive{
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    position:absolute;
+                    height: 100%;
+                    width:100%;
+                       img{
+                        width: 80%;
+                        object-fit: contain;
+                            
+                            height: 100%;
+                        }
+                    
+                }
             }
+            
+           
             .dashboardgroupimg{
-                padding: 15px;
-                display: flex;
-                margin: 275px 0px 0px;
-                flex-direction: column;
-                img{
-                    position: absolute;
-                    margin-right: 200px;
-                    width: 350px;
-                    left: 4%;
-                    bottom: -197%;
+                text-align: center;
+                width:100%;
+                .spantxt{
+                    margin-bottom: 20px;
+                    text-align: left;
+                    margin: 15px;
+                    br{
+                        display: none;
+                    }
                 }
                 .dashboardtxtgroup{
                     display: flex;
-                    justify-content: flex-end;
-                    flex-direction: column-reverse;
-                    list-style:circle;
+                    flex-direction: column !important;
+                
+                   
                     &:active{
                         
                     }
+                    
                     .dashboardflex{
                         list-style:circle;
                         .dashboardtxtmain{
-                            font-size: 21px;
+                            font-size: 20px;
                         }
                         .dashboardtxt{
-                            font-size: 14px;
                         }
                     }
                 }
@@ -217,34 +301,250 @@
         
     }
     .contact{
-        margin-bottom: 0;
-        .contactimg{
-            height: 375px;
-        }   
-        .contacttitle{
-            position: absolute ;
-            text-align: center;
-            left: 0%;
-            top: 355%;
-            color: white;
-            margin: 20px;
-            b{
-                font-size: 24px;
-            }
-            .contacttxt{
-                font-size: 17px;
-            }
-            .contactPost{
-                display: flex;
-                flex-direction: column;
-                .contactMail{
-                    width: 90%;
-                    margin-bottom: 20px;
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 50px;
+        background-size: cover;
+        background-position: center; 
+        background-image: url('../../../public/img/contact.png');   
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 원하는 배경 색상 및 투명도 설정 */
+            z-index: 1; /* 배경 이미지 위에 위치하도록 설정 */
+          }
+        .contactContainer{
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .contacttitle{
+                padding-top: 200px;
+                text-align: center;
+                color: white;
+                b{
+                    font-size: 32px;
                 }
-                .contactSubmit{
-                    width: 100%;
+                .contacttxt{
+                    font-size: 17px;
+                    margin-bottom:30px;
+                }
+                .contactPost{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .contactMail{
+                        width: 90%;
+                        margin-bottom: 20px;
+                    }
+                   
+                    .contactSubmit{
+                        font-size: 17px;
+                        width: 95%;
+                        border: 0px;
+                        padding: 15px;
+                        border-radius: 0 5px 5px 0;
+                        background-color: #1C9AEA;
+                        color: white;
+                        a{color: white;}
+                    }
                 }
             }
         }
     }
 }
+
+
+@media(max-width:380px){
+    .Servicesgroup {
+        
+        .Services {
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            
+            .Servicestext{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                align-items: center;
+                width: 100%;
+                gap: 0px;
+                .Servicesimg{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                   
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        margin:0 auto;
+                        width: 70vw;
+                    
+                        
+                    }
+                }
+                .Servicestextgroup {
+                    display: flex;
+                    align-items: center;
+
+                    h3 {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+
+                    .Servicestxt {
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .dashboardmain{
+        width: 100%;
+        height: 100%;
+        background-color:#225378 ;
+        
+        .dashboardgroup{
+            height: 70vh;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            align-items: center;
+        
+            .dashboardimg{
+               height: 100%;
+               width:100%;
+               position: relative;
+               margin-top: 100px;
+               left:0;
+               right:0;
+                .dashboardactive{
+                   
+                    position:absolute;
+                    height: 100%;
+                    width:100%;
+                       img{
+                        object-fit: contain;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    
+                }
+            }
+            
+           
+            .dashboardgroupimg{
+                width:100%;
+                
+                .spantxt{
+                    text-align: left;
+                    margin-bottom: 20px;
+                    font-size: 15px;
+                }
+                .dashboardtxtgroup{
+                    
+                    display: flex;
+                    flex-direction: column !important;
+                
+                   
+                    &:active{
+                        
+                    }
+                    
+                    .dashboardflex{
+                        
+                        list-style:circle;
+                        text-align: center;
+                        .dashboardtxtmain{
+                            font-size: 15px;
+                            
+                        }
+                        .dashboardtxt{
+                            
+                        }
+                    }
+                }
+                .line{
+                    border-bottom: 1px solid white;
+                    margin: 30px 0;
+                }
+            }
+        }
+        
+    }
+    .contact{
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 50px;
+        background-size: cover;
+        background-position: center; 
+        background-image: url('../../../public/img/contact.png');   
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 원하는 배경 색상 및 투명도 설정 */
+            z-index: 1; /* 배경 이미지 위에 위치하도록 설정 */
+          }
+        .contactContainer{
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .contacttitle{
+                padding-top: 200px;
+                text-align: center;
+                color: white;
+                b{
+                    font-size: 32px;
+                }
+                .contacttxt{
+                    font-size: 17px;
+                    margin-bottom:30px;
+                }
+                .contactPost{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .contactMail{
+                        width: 90%;
+                        margin-bottom: 20px;
+                    }
+                   
+                    .contactSubmit{
+                        font-size: 17px;
+                        width: 98%;
+                        border: 0px;
+                        padding: 15px;
+                        border-radius: 0 5px 5px 0;
+                        background-color: #1C9AEA;
+                        color: white;
+                        a{color: white;}
+                    }
+                }
+            }
+        }
+    }
+}
+

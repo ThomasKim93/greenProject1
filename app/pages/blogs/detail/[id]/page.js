@@ -5,6 +5,9 @@ import style from '../detail.module.scss'
 import { useParams } from 'next/navigation'
 import { useEffect, useState } from 'react';
 import blogData from '../../blog.json';
+import Header from '../../../../component/Header';
+import Footer from '../../../../component/Footer';
+
 
 function page() {
     const params = useParams();
@@ -24,7 +27,8 @@ function page() {
 
     return (
         <>
-<section className={style.detail_section}>
+        <Header/>
+      <section className={style.detail_section}>
         <article className={style.detail_top}>
           <img src='../../../blogs/blogs_detail.png' />
           <p className={style.for_mobile}><span>{blogDataById.readTime}</span><span>{blogDataById.date}</span></p>
@@ -44,6 +48,7 @@ function page() {
           </div>
         </article>
       </section>
+      <Footer/>
         </>
     )
 }

@@ -85,7 +85,7 @@ function Signup() {
                 <article className={style.log_in}>
                     <div>
                         <p>Already have an account ?</p>
-                        <a href='#'> Log in</a>
+                        <a href='./login'> Log in</a>
                     </div>
                 </article>
 

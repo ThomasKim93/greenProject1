@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import style from '../pages/customer/customer.module.scss';
-import { useRouter } from 'next/router'; 
+import { useRouter } from 'next/navigation';
 import Loading from './Loading';
 import Headers from '../component/Header'
 import Footer from '../component/Footer'
@@ -20,6 +20,27 @@ function Customer() {
     fetchData();
   }, []); 
   
+
+  const router = useRouter();
+
+  const [email, setEmail] = useState(''); // 이메일 상태 추가
+  // router
+  
+  const handleChange = (event) => {
+      setEmail(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+      event.preventDefault();
+      // You can perform any necessary validation here before navigating
+      sendEmail(email);
+  };
+
+  const sendEmail = (email) => {
+      router.push(`/Contactus/${email}`);
+  };
+
+
   return (
     <>
      <Headers/>
@@ -167,15 +188,21 @@ function Customer() {
             </li>
           </ul>
         </article>
-        <div className={style.contact}>
-                <img src='../img/contact.png' className={style.contactimg}></img>
-                <div className={style.contacttitle}>
-                    <b> Contact Us</b>
-                    <p className={style.contacttxt}>Have questions or need assistance? We're here to help you find the perfect software solutions for your business.</p>
-                    <form className={style.contactPost}>
+          {/* contact */}
+          <div className={style.contact}>
+                <div className={style.contactContainer}>
+                    <div className={style.contacttitle}>
+                        <b> Contact Us</b>
+                        <p className={style.contacttxt}>Have questions or need assistance? We're here to help you find the perfect software solutions for your business.</p>
+                        <form className={style.contactPost} onSubmit={handleSubmit}>
                         <input type='email' placeholder="EMAIL" autoComplete="off" className={style.contactMail}></input>
-                        <button type='submit' className={style.contactSubmit}>Get Started</button>
-                    </form>
+                        <button type='submit' className={style.contactSubmit}>
+                            <a href="../../pages/Contact"> 
+                            Get Started
+                            </a>
+                        </button>
+                        </form>
+                    </div>
                 </div>
             </div>
       </section>

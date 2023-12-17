@@ -5,10 +5,13 @@ import Headers from './pages/header/page'
 import Footer from './pages/footer/page'
 
 export default function Home() {
-  return (
+ 
+ 
+  return (   
     <>
       <Headers/>
       <Main/>
+      
       <Footer/>
     </>
   )

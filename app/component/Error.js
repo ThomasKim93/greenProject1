@@ -15,7 +15,7 @@ function Error() {
           <p>Ooops!! Page is gone.</p>
           <p>We're sorry, but the page you're looking for can't be found. </p>
           <p> Would you like to go back to the previous page or visit our homepage? </p>
-          <a href='#'>go home</a>
+          <a href='./main'>go home</a>
           </div>
         </article>
       </section>

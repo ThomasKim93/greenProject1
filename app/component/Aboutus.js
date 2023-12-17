@@ -34,8 +34,24 @@ function Aboutus() {
       return newState;
     });
   };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // You can perform any necessary validation here before navigating
+    sendEmail(email);
+};
+
+const [email, setEmail] = useState(''); // 이메일 상태 추가
+    // router
+    
+
+    const handleChange = (event) => {
+        setEmail(event.target.value);
+    };
 
 
+    const sendEmail = (email) => {
+        router.push(`/Contactus/${email}`);
+    };
 
 
   return (
@@ -108,50 +124,59 @@ function Aboutus() {
           
 
           <div className={style.about_third_introduce}>
-            <div>
-             
-              <ul className={style.social}>
-                <li><a href='#'><img src='../../../aboutus/Facebook.png' /></a></li>
-                <li><a href='#'><img src='../../../aboutus/Twitter.png' /></a></li>
-                <li><a href='#'><img src='../../../aboutus/Instagram.png' /></a></li>
-                <li><a href='#'><img src='../../../aboutus/LinkedIn.png' /></a></li>
-              </ul>
-              <div className={style.for_mobile}></div>
-              <div className={style.show}>
-                <img src='../../../aboutus/lakhendra.png' />
-                <p>Lakhendra Kushwah</p>
-                <span>CEO</span>
+              
+              <div className={style.about_box}>
+              
+                <ul className={style.social}>
+                  <li><a href='#'><img src='../../../aboutus/Facebook.png' /></a></li>
+                  <li><a href='#'><img src='../../../aboutus/Twitter.png' /></a></li>
+                  <li><a href='#'><img src='../../../aboutus/Instagram.png' /></a></li>
+                  <li><a href='#'><img src='../../../aboutus/LinkedIn.png' /></a></li>
+                </ul>
+
+                <div className={style.for_mobile}></div>
+
+
+                <div className={style.show}>
+                  <img src='../../../aboutus/lakhendra.png' />
+                  <p>Lakhendra Kushwah</p>
+                  <span>CEO</span>
+
+                  
+                </div>
               </div>
-            </div>
-            <div>
-            
-              <ul className={style.social}>
-                <li><a href='#'><img src='../../../aboutus/Facebook.png' /></a></li>
-                <li><a href='#'><img src='../../../aboutus/Twitter.png' /></a></li>
-                <li><a href='#'><img src='../../../aboutus/Instagram.png' /></a></li>
-                <li><a href='#'><img src='../../../aboutus/LinkedIn.png' /></a></li>
-              </ul>
-              <div className={style.for_mobile}></div>
-              <div className={style.show}>
-                <img src='../../../aboutus/kaustubh.png' />
-                <p>Kaustubh Rai</p>
-                <span>CTO</span>
+
+              <div className={style.about_box}>
+              
+                <ul className={style.social}>
+                  <li><a href='#'><img src='../../../aboutus/Facebook.png' /></a></li>
+                  <li><a href='#'><img src='../../../aboutus/Twitter.png' /></a></li>
+                  <li><a href='#'><img src='../../../aboutus/Instagram.png' /></a></li>
+                  <li><a href='#'><img src='../../../aboutus/LinkedIn.png' /></a></li>
+                </ul>
+                <div className={style.for_mobile}></div>
+                <div className={style.show}>
+                  <img src='../../../aboutus/kaustubh.png' />
+                  <p>Kaustubh Rai</p>
+                  <span>CTO</span>
+                </div>
               </div>
-            </div>
-            <div>
-              <ul className={style.social}>
-                <li><a href='#'><img src='../../../aboutus/Facebook.png' /></a></li>
-                <li><a href='#'><img src='../../../aboutus/Twitter.png' /></a></li>
-                <li><a href='#'><img src='../../../aboutus/Instagram.png' /></a></li>
-                <li><a href='#'><img src='../../../aboutus/LinkedIn.png' /></a></li>
-              </ul>
-              <div className={style.for_mobile}></div>
-              <div className={style.show}>
-                <img src='../../../aboutus/mahendra.png' />
-                <p>Mahendra Kushwah</p>
-                <span>COO</span>
+
+              <div className={style.about_box}>
+                <ul className={style.social}>
+                  <li><a href='#'><img src='../../../aboutus/Facebook.png' /></a></li>
+                  <li><a href='#'><img src='../../../aboutus/Twitter.png' /></a></li>
+                  <li><a href='#'><img src='../../../aboutus/Instagram.png' /></a></li>
+                  <li><a href='#'><img src='../../../aboutus/LinkedIn.png' /></a></li>
+                </ul>
+                <div className={style.for_mobile}></div>
+                <div className={style.show}>
+                  <img src='../../../aboutus/mahendra.png' />
+                  <p>Mahendra Kushwah</p>
+                  <span>COO</span>
+                </div>
+
               </div>
-            </div>
           </div>
         </article>
 
@@ -179,18 +204,24 @@ function Aboutus() {
           </div>
         </article>
 
-        <div className={style.contact}>
-                <img src='../img/contact.png' className={style.contactimg}></img>
-                <div className={style.contacttitle}>
-                    <b> Contact Us</b>
-                    <p className={style.contacttxt}>Have questions or need assistance? We're here to help you find the perfect software solutions for your business.</p>
-                    <form className={style.contactPost}>
+       {/* contact */}
+            <div className={style.contact}>
+                <div className={style.contactContainer}>
+                    <div className={style.contacttitle}>
+                        <b> Contact Us</b>
+                        <p className={style.contacttxt}>Have questions or need assistance? We're here to help you find the perfect software solutions for your business.</p>
+                        <form className={style.contactPost} onSubmit={handleSubmit}>
                         <input type='email' placeholder="EMAIL" autoComplete="off" className={style.contactMail}></input>
-                        <button type='submit' className={style.contactSubmit}>Get Started</button>
-                    </form>
+                        <button type='submit' className={style.contactSubmit}>
+                            <a href="../../pages/Contact"> 
+                            Get Started
+                            </a>
+                        </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-                
+      
       </section>
       <Footer/>
     </>

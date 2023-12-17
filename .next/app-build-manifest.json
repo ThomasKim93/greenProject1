@@ -11,6 +11,36 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/pages/aboutus/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/pages/aboutus/page.css",
+      "static/chunks/app/pages/aboutus/page.js"
+    ],
+    "/pages/blogs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/pages/blogs/page.css",
+      "static/chunks/app/pages/blogs/page.js"
+    ],
+    "/pages/Contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/pages/Contact/page.css",
+      "static/chunks/app/pages/Contact/page.js"
+    ],
+    "/pages/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/pages/login/page.css",
+      "static/chunks/app/pages/login/page.js"
+    ],
+    "/pages/signup/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/pages/signup/page.css",
+      "static/chunks/app/pages/signup/page.js"
     ]
   }
 }

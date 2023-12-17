@@ -3,7 +3,14 @@ import React, { useState } from 'react'
 import Headers from '../pages/header/page'
 import Footer from '../pages/footer/page'
 import contactusSt from "../pages/Contact/contactus.module.scss";
+import { useParams } from 'next/navigation'
+
+
 function Contactus() {
+
+    const params = useParams();
+
+    console.log(params.email)
     const [email, setEmail] = useState('');
     return (
         <>
@@ -45,14 +52,14 @@ function Contactus() {
                     </p>
                     <form>
                         <div className={contactusSt.contactUsname}>
-                            <b>First Name*
+                            <b>First Name *
                                 <input type='name' placeholder='Enter your name'></input>
                             </b>
                             <b>Last Name *
                                 <input   input type='name' placeholder='Enter your name'></input>
                             </b>
                         </div>
-                        <div className={contactusSt.contactUsinfo}>
+                        <div className={contactusSt.contactUsinfored}>
                             <b>Email *
                             <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} />
                             </b>

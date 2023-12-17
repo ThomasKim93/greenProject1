@@ -82,7 +82,7 @@ function Login() {
                 <article className={style.sign_up}>
                     <div>
                         <p>Don’t have an account ?</p>
-                        <a href='#'> Sign up</a>
+                        <a href='./signup'> Sign up</a>
                     </div>
                 </article>
             </section>

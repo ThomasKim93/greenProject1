@@ -76,19 +76,19 @@ function Footer() {
                         <b className={footerSt.footermediaup}>Go to top</b>
                     </a>
                 <div className={footerSt.logo}>
-                    <img src='../img/logo.png'></img>
+                    <img src='/img/logo.png'></img>
                     <div className={footerSt.sns}>
                         <Link href={'/'}>
-                            <img src='../img/Facebook.png'></img>
+                            <img src='/img/Facebook.png'></img>
                         </Link>
                         <Link href={'/'}>
-                            <img src='../img/Twitter.png'></img>
+                            <img src='/img/Twitter.png'></img>
                         </Link>
                         <Link href={'/'}>
-                            <img src='../img/Instagram.png'></img>
+                            <img src='/img/Instagram.png'></img>
                         </Link>
                         <Link href={'/'}>
-                            <img src='../img/LinkedIn.png'></img>
+                            <img src='/img/LinkedIn.png'></img>
                         </Link>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ function Footer() {
                     </div>
                     <Link href={'/'} className={footerSt.footertopLink} onClick={scrollToTop}>
                         <div className={footerSt.footertop}>
-                            <img src='../img/straight.png' className={footerSt.footerstraight}></img>
+                            <img src='/img/straight.png' className={footerSt.footerstraight}></img>
                         </div>
                         <b className={footerSt.footerup}>UP</b>
 
@@ -129,9 +129,9 @@ function Footer() {
                     <ul className={footerSt.footeraccodiangroup}>
                         {footerItems.map((item, index) => (
                             <li
-                                key={index}
-                                className={`${footerSt.footeraccodianlist} ${activeFooter === index ? footerSt.active : ''}`}
-                                onClick={() => handleFooterClick(index)}
+                            key={index}
+                            className={`${footerSt.footeraccodianlist} ${activeFooter === index ? `${footerSt.active} with-after` : ''}`}
+                            onClick={() => handleFooterClick(index)}
                             >
                                 <p className={footerSt.footeraccodiantitle}>{item.title}</p>
                                 <div className={footerSt.lined}></div>
@@ -157,6 +157,7 @@ function Footer() {
                                 )}
                             </li>
                         ))}
+                        <div className={footerSt.line}></div>
                         {footerItems.map((item, index) => (
                             <li
                                 key={index}
@@ -171,6 +172,7 @@ function Footer() {
                                 )}
                             </li>
                         ))}
+                        <div className={footerSt.line}></div>
                         {footerItems.map((item, index) => (
                             <li
                                 key={index}
@@ -185,6 +187,7 @@ function Footer() {
                                 )}
                             </li>
                         ))}
+                        <div className={footerSt.line}></div>
                     </ul>
                 </div>
             </div>
