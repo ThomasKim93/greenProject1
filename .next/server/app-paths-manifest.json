@@ -1,8 +1,4 @@
 {
-  "/pages/blogs/page": "app/pages/blogs/page.js",
-  "/pages/Contact/page": "app/pages/Contact/page.js",
-  "/pages/login/page": "app/pages/login/page.js",
-  "/pages/signup/page": "app/pages/signup/page.js",
   "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

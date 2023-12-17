@@ -8,10 +8,6 @@ import { Swiper, SwiperSlide, Mousewheel } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import LocomotiveScroll from 'locomotive-scroll';
-
 
 function Main() {
 
@@ -56,39 +52,39 @@ function Main() {
         setIsDragging(true);
     };
 
-    useEffect(() => {
-        const handleMouseMove = (e) => {
-            if (isDragging) {
-                const sliderRect = sliderRef.current.getBoundingClientRect();
-                const offsetX = e.clientX - sliderRect.left;
-                const newPercentage = Math.max(0, Math.min(100, Math.round(offsetX / sliderRect.width * 100)));
+    const handleMouseMove = (e) => {
+        if (isDragging) {
+            const sliderRect = sliderRef.current.getBoundingClientRect();
+            const offsetX = e.clientX - sliderRect.left;
+            const newPercentage = Math.max(0, Math.min(100, Math.round(offsetX / sliderRect.width * 100)));
     
-                if (newPercentage !== sliderValue) {
-                    requestAnimationFrame(() => {
-                        setSliderValue(newPercentage);
+            if (newPercentage !== sliderValue) {
+                requestAnimationFrame(() => {
+                    setSliderValue(newPercentage);
     
-                        // 드래그 값에 따라 배경 색 업데이트
-                        const newWidth = `${newPercentage}%`;
-                        setThumbWidth(newWidth);
+                    // 드래그 값에 따라 배경 색 업데이트
+                    const newWidth = `${newPercentage}%`;
+                    setThumbWidth(newWidth);
     
-                        // 나머지 로직은 그대로 유지
-                        const maxSavings = 1000;
-                        const newSavings = Math.round((newPercentage / 100) * maxSavings);
-                        setSavings(newSavings);
+                    // 나머지 로직은 그대로 유지
+                    const maxSavings = 1000;
+                    const newSavings = Math.round((newPercentage / 100) * maxSavings);
+                    setSavings(newSavings);
     
-                        const maxSpendings = 2000;
-                        const newSpending = Math.round((newPercentage / 100) * maxSpendings);
-                        setSpendings(newSpending);
-                    });
-                }
+                    const maxSpendings = 2000;
+                    const newSpending = Math.round((newPercentage / 100) * maxSpendings);
+                    setSpendings(newSpending);
+                });
             }
-        };
-    
-        const handleMouseUp = () => {
-            setIsDragging(false);
-        };
-    
+        }
+    };
+
+    const handleMouseUp = () => {
+        setIsDragging(false);
+    };
+    useEffect(() => {
         if (typeof window !== 'undefined') {
+            // document 객체를 사용하는 코드
             window.addEventListener('mousemove', handleMouseMove);
             window.addEventListener('mouseup', handleMouseUp);
     
