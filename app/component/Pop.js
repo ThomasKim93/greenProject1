@@ -18,7 +18,7 @@ const MenuOptions = ({ closeMenu }) => {
         <div className={heraderSt.menuOptionsOverlay}>
             <div className={heraderSt.menuOptions}>
                 <div className={heraderSt.logo}>
-                    <img src="/img/logo.png" className={heraderSt.img}></img>
+                    <img src="/img/logo.svg" className={heraderSt.img}></img>
                 </div>
                 <div className={heraderSt.popmenu}>
                     <span className={heraderSt.home}onClick={() => handleMenuItemClick("/")}> HOME </span>

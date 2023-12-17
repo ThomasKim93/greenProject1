@@ -76,7 +76,7 @@ function Footer() {
                         <b className={footerSt.footermediaup}>Go to top</b>
                     </a>
                 <div className={footerSt.logo}>
-                    <img src='/img/logo.png'></img>
+                    <img src='/img/logo.svg'></img>
                     <div className={footerSt.sns}>
                         <Link href={'/'}>
                             <img src='/img/Facebook.png'></img>

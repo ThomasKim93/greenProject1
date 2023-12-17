@@ -235,6 +235,7 @@
   }
   .footer_footer__oBz2j .footer_logogroup__53FSy .footer_footerfooteraccodian__dtLv_ .footer_footeraccodiangroup__PLbva span a {
     margin-right: 20px;
+    color: black;
   }
 }
 @media (max-width: 390px) {
@@ -632,7 +633,7 @@
     margin: 15px 0 30px 30px;
   }
   .header_menuOptions___JG3C .header_logo__WRdjd .header_img__cFfIQ {
-    width: 50%;
+    width: 75%;
     height: 100%;
   }
   .header_menuOptions___JG3C .header_popmenu__NsCgN {
