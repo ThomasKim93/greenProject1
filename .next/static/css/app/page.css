@@ -378,6 +378,7 @@
 .header_header__TgNnR .header_logo__WRdjd {
   width: 100%;
   height: 100%;
+  margin: 10px;
 }
 .header_header__TgNnR .header_logo__WRdjd .header_img__cFfIQ {
   width: 20%;
@@ -511,14 +512,14 @@
   .header_menuOptions___JG3C .header_logo__WRdjd {
     width: 50%;
     height: 5%;
-    margin: 15px 0 30px 30px;
+    margin: 15px 0 30px 0px;
   }
   .header_menuOptions___JG3C .header_logo__WRdjd .header_img__cFfIQ {
     width: 50%;
     height: 100%;
   }
   .header_menuOptions___JG3C .header_popmenu__NsCgN {
-    margin-left: 25px;
+    margin-right: 25px;
   }
   .header_menuOptions___JG3C .header_popmenu__NsCgN .header_home__GNA3z {
     margin-top: 10px;
@@ -539,7 +540,7 @@
     font-size: 12px;
     margin-bottom: 10px;
     position: absolute;
-    right: 7%;
+    right: 5%;
     top: 150px;
     transition: 0.5s;
   }
@@ -556,7 +557,7 @@
     font-size: 21px;
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 25px;
+    margin-right: 25px;
   }
   .header_menuOptions___JG3C .header_subMenu2__BRIAb span {
     margin: 10px 0;
@@ -587,6 +588,7 @@
   .header_header__TgNnR .header_logo__WRdjd {
     width: 100%;
     height: 100%;
+    margin: 10px;
   }
   .header_header__TgNnR .header_logo__WRdjd .header_img__cFfIQ {
     width: 100%;
@@ -676,14 +678,14 @@
   .header_menuOptions___JG3C .header_logo__WRdjd {
     width: 50%;
     height: 5%;
-    margin: 15px 0 30px 30px;
+    margin: 15px 0 30px 0px;
   }
   .header_menuOptions___JG3C .header_logo__WRdjd .header_img__cFfIQ {
     width: 75%;
     height: 100%;
   }
   .header_menuOptions___JG3C .header_popmenu__NsCgN {
-    margin-left: 25px;
+    margin-right: 25px;
   }
   .header_menuOptions___JG3C .header_popmenu__NsCgN .header_home__GNA3z {
     margin-top: 10px;
@@ -704,8 +706,8 @@
     font-size: 12px;
     margin-bottom: 10px;
     position: absolute;
-    right: 7%;
-    top: 150px;
+    right: 8%;
+    top: 155px;
     transition: 0.5s;
   }
   .header_menuOptions___JG3C .header_popmenu__NsCgN .header_menuOptionsgroup__hGhcw .header_subMenu__CVJCs {
@@ -721,7 +723,7 @@
     font-size: 21px;
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 25px;
+    margin-right: 25px;
   }
   .header_menuOptions___JG3C .header_subMenu2__BRIAb span {
     margin: 10px 0;
@@ -751,6 +753,7 @@
   .header_header__TgNnR .header_logo__WRdjd {
     width: 100%;
     height: 100%;
+    margin: 10px;
   }
   .header_header__TgNnR .header_logo__WRdjd .header_img__cFfIQ {
     width: 100%;
@@ -774,7 +777,7 @@
   .header_header__TgNnR .header_menubar__XR9nI {
     display: block;
     width: 10%;
-    margin-right: 10px;
+    margin: 10px;
   }
   .header_header__TgNnR .header_menu1__Gtv0U {
     display: none;
@@ -803,16 +806,16 @@
     flex-direction: column;
   }
   .header_menuOptions___JG3C .header_logo__WRdjd {
-    width: 50%;
+    width: 100%;
     height: 5%;
-    margin: 15px 0 30px 30px;
+    margin: 20px 0 30px 0px;
   }
   .header_menuOptions___JG3C .header_logo__WRdjd .header_img__cFfIQ {
     width: 50%;
     height: 100%;
   }
   .header_menuOptions___JG3C .header_popmenu__NsCgN {
-    margin-left: 25px;
+    margin-right: 25px;
   }
   .header_menuOptions___JG3C .header_popmenu__NsCgN .header_home__GNA3z {
     margin-top: 10px;
@@ -833,8 +836,8 @@
     font-size: 12px;
     margin-bottom: 10px;
     position: absolute;
-    right: 7%;
-    top: 150px;
+    right: 11%;
+    top: 155px;
     transition: 0.5s;
   }
   .header_menuOptions___JG3C .header_popmenu__NsCgN .header_menuOptionsgroup__hGhcw .header_subMenu__CVJCs {
@@ -850,7 +853,7 @@
     font-size: 21px;
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 25px;
+    margin-right: 25px;
   }
   .header_menuOptions___JG3C .header_subMenu2__BRIAb span {
     margin: 10px 0;
